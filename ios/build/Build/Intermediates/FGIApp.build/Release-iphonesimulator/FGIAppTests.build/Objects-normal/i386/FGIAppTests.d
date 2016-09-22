@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/ios/FGIAppTests/FGIAppTests.m \
+  /Users/chalene/workshop/DNAapp副本/ios/DNAappTests/DNAappTests.m \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h \

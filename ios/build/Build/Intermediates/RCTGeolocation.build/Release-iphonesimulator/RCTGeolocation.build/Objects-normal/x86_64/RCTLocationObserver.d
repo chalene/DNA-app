@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.h \
   ../../React/Modules/RCTEventEmitter.h ../../React/Base/RCTBridge.h \
   ../../React/Base/RCTBridgeDelegate.h \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTDefines.h \

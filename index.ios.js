@@ -22,7 +22,7 @@ import Util from './view/utils';
 
 //import varifyUser from  './view/varifyUser';
 
-class FGIApp extends Component {
+class DNAapp extends Component {
   constructor() {
     super();
     
@@ -152,4 +152,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('FGIApp', () => FGIApp);
+AppRegistry.registerComponent('DNAapp', () => DNAapp);

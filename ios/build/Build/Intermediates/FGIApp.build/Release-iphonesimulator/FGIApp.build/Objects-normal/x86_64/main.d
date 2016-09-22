@@ -1,2 +1,2 @@
-dependencies: /Users/chalene/workshop/FGIApp副本/ios/FGIApp/main.m \
-  /Users/chalene/workshop/FGIApp副本/ios/FGIApp/AppDelegate.h
+dependencies: /Users/chalene/workshop/DNAapp副本/ios/DNAapp/main.m \
+  /Users/chalene/workshop/DNAapp副本/ios/DNAapp/AppDelegate.h

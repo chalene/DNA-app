@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/ios/FGIApp/AppDelegate.m \
-  /Users/chalene/workshop/FGIApp副本/ios/FGIApp/AppDelegate.h \
+  /Users/chalene/workshop/DNAapp副本/ios/DNAapp/AppDelegate.m \
+  /Users/chalene/workshop/DNAapp副本/ios/DNAapp/AppDelegate.h \
   ../node_modules/react-native/React/Base/RCTBundleURLProvider.h \
   ../node_modules/react-native/React/Base/RCTRootView.h \
   ../node_modules/react-native/React/Base/RCTBridge.h \

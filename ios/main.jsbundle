@@ -1484,7 +1484,7 @@ return Array.from(arr);
 }
 };
 })(typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : this);
-__d(0 /* FGIApp/index.ios.js */, function(global, require, module, exports) {
+__d(0 /* DNAapp/index.ios.js */, function(global, require, module, exports) {
 
 
 
@@ -1506,8 +1506,8 @@ var _signup=require(748 /* ./view/signup */);var _signup2=babelHelpers.interopRe
 var _bar=require(756 /* ./view/bar */);var _bar2=babelHelpers.interopRequireDefault(_bar);
 var _utils=require(630 /* ./view/utils */);var _utils2=babelHelpers.interopRequireDefault(_utils);var
 
-FGIApp=function(_Component){babelHelpers.inherits(FGIApp,_Component);
-function FGIApp(){babelHelpers.classCallCheck(this,FGIApp);var _this2=babelHelpers.possibleConstructorReturn(this,(FGIApp.__proto__||Object.getPrototypeOf(FGIApp)).call(this));_this2.
+DNAapp=function(_Component){babelHelpers.inherits(DNAapp,_Component);
+function DNAapp(){babelHelpers.classCallCheck(this,DNAapp);var _this2=babelHelpers.possibleConstructorReturn(this,(DNAapp.__proto__||Object.getPrototypeOf(DNAapp)).call(this));_this2.
 
 
 
@@ -1599,11 +1599,11 @@ page:content});
 
 });
 
-};_this2.state={isLogin:true,onSignup:false,isFirstTime:"0",uid:"",page:_react2.default.createElement(_reactNative.View,null)};return _this2;}babelHelpers.createClass(FGIApp,[{key:'componentWillMount',value:function componentWillMount(){this._renderPage();}},{key:'render',value:function render()
+};_this2.state={isLogin:true,onSignup:false,isFirstTime:"0",uid:"",page:_react2.default.createElement(_reactNative.View,null)};return _this2;}babelHelpers.createClass(DNAapp,[{key:'componentWillMount',value:function componentWillMount(){this._renderPage();}},{key:'render',value:function render()
 
 {
 return this.state.page;
-}}]);return FGIApp;}(_react.Component);
+}}]);return DNAapp;}(_react.Component);
 
 
 var styles=_reactNative.StyleSheet.create({
@@ -1634,8 +1634,8 @@ fontSize:16}});
 
 
 
-_reactNative.AppRegistry.registerComponent('FGIApp',function(){return FGIApp;});
-}, "FGIApp/index.ios.js");
+_reactNative.AppRegistry.registerComponent('DNAapp',function(){return DNAapp;});
+}, "DNAapp/index.ios.js");
 __d(12 /* react/react.js */, function(global, require, module, exports) {'use strict';
 
 module.exports=require(13 /* ./lib/React */);
@@ -64856,7 +64856,7 @@ resizeMode:'contain'}});
 
 module.exports=NavigationHeaderBackButton;
 }, "NavigationHeaderBackButton");
-__d(515 /* react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","httpServerLocation":"/assets/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","width":24,"height":24,"scales":[1,1.5,2,3,4],"files":["/Users/chalene/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1x.ios.png","/Users/chalene/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1.5x.ios.png","/Users/chalene/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@2x.ios.png","/Users/chalene/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@3x.ios.png","/Users/chalene/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@4x.ios.png"],"hash":"245e08fe05e1b838a211e960791ace93","name":"back-icon","type":"png"});
+__d(515 /* react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","httpServerLocation":"/assets/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","width":24,"height":24,"scales":[1,1.5,2,3,4],"files":["/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1.5x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@2x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@3x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@4x.ios.png"],"hash":"245e08fe05e1b838a211e960791ace93","name":"back-icon","type":"png"});
 }, "react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png");
 __d(516 /* NavigationHeaderStyleInterpolator */, function(global, require, module, exports) {
 
@@ -78207,7 +78207,7 @@ var ReactMount=require(621 /* ./ReactMount */);
 
 module.exports=ReactMount.renderSubtreeIntoContainer;
 }, "react/lib/renderSubtreeIntoContainer.js");
-__d(629 /* FGIApp/view/login.js */, function(global, require, module, exports) {'use strict';
+__d(629 /* DNAapp/view/login.js */, function(global, require, module, exports) {'use strict';
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 
 var _reactNative=require(43 /* react-native */);
@@ -78420,8 +78420,8 @@ backgroundColor:"transparent"}});
 
 
 module.exports=Login;
-}, "FGIApp/view/login.js");
-__d(630 /* FGIApp/view/utils.js */, function(global, require, module, exports) {
+}, "DNAapp/view/login.js");
+__d(630 /* DNAapp/view/utils.js */, function(global, require, module, exports) {
 
 
 'use strict';
@@ -78487,7 +78487,7 @@ key:'HSHHSGSGGSTWSYWSYUSUWSHWBS-REACT-NATIVE'};
 
 
 module.exports=Util;
-}, "FGIApp/view/utils.js");
+}, "DNAapp/view/utils.js");
 __d(631 /* react-native-vector-icons/FontAwesome.js */, function(global, require, module, exports) {
 
 
@@ -82843,7 +82843,7 @@ return result;
 
 serialize;
 }, "react-native-form/serialize.js");
-__d(747 /* FGIApp/config.js */, function(global, require, module, exports) {'use strict';
+__d(747 /* DNAapp/config.js */, function(global, require, module, exports) {'use strict';
 
 module.exports={
 
@@ -82851,8 +82851,8 @@ module.exports={
 
 shop_url:'http://172.16.68.71:8000/shop',
 url:'http://172.16.68.71:8000/iosapp'};
-}, "FGIApp/config.js");
-__d(748 /* FGIApp/view/signup.js */, function(global, require, module, exports) {'use strict';
+}, "DNAapp/config.js");
+__d(748 /* DNAapp/view/signup.js */, function(global, require, module, exports) {'use strict';
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNative=require(43 /* react-native */);
 
@@ -83222,8 +83222,8 @@ backgroundColor:"rgba(0,0,0,0.2)"}});
 
 
 module.exports=Signup;
-}, "FGIApp/view/signup.js");
-__d(749 /* FGIApp/view/user.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.UserInfo=undefined;
+}, "DNAapp/view/signup.js");
+__d(749 /* DNAapp/view/user.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.UserInfo=undefined;
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 
 var _reactNative=require(43 /* react-native */);
@@ -84406,7 +84406,7 @@ justifyContent:"center"},
 userSettingContainer:{
 marginTop:100,
 marginLeft:30}});
-}, "FGIApp/view/user.js");
+}, "DNAapp/view/user.js");
 __d(750 /* react-native-activity-view/ActivityView.ios.js */, function(global, require, module, exports) {
 
 
@@ -84510,9 +84510,9 @@ var NativeVibrancyView=(0,_reactNative.requireNativeComponent)('VibrancyView',Vi
 
 module.exports=VibrancyView;
 }, "react-native-blur/src/VibrancyView.ios.js");
-__d(755 /* FGIApp/view/img/logo.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":198,"height":198,"scales":[1],"files":["/Users/chalene/FGIApp副本/view/img/logo.png"],"hash":"ff2e7aa00d32f96b227c92ccf3aa0459","name":"logo","type":"png"});
-}, "FGIApp/view/img/logo.png");
-__d(756 /* FGIApp/view/bar.js */, function(global, require, module, exports) {'use strict';
+__d(755 /* DNAapp/view/img/logo.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":198,"height":198,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/logo.png"],"hash":"ff2e7aa00d32f96b227c92ccf3aa0459","name":"logo","type":"png"});
+}, "DNAapp/view/img/logo.png");
+__d(756 /* DNAapp/view/bar.js */, function(global, require, module, exports) {'use strict';
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNative=require(43 /* react-native */);
 
@@ -84614,7 +84614,7 @@ _react2.default.createElement(_user2.default,{uid:this.props.uid,isFirstTime:thi
 
 
 module.exports=Bar;
-}, "FGIApp/view/bar.js");
+}, "DNAapp/view/bar.js");
 __d(757 /* react-native-vector-icons/Ionicons.js */, function(global, require, module, exports) {
 
 
@@ -85563,7 +85563,7 @@ var Ionicons=(0,_createIconSet2.default)(glyphMap,'Ionicons','Ionicons.ttf');
 module.exports=Ionicons;
 module.exports.glyphMap=glyphMap;
 }, "react-native-vector-icons/Ionicons.js");
-__d(758 /* FGIApp/view/store.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+__d(758 /* DNAapp/view/store.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNative=require(43 /* react-native */);
@@ -86105,8 +86105,8 @@ centering:{
 alignItems:'center',
 justifyContent:'center',
 padding:8}});
-}, "FGIApp/view/store.js");
-__d(759 /* FGIApp/view/itemOrder.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+}, "DNAapp/view/store.js");
+__d(759 /* DNAapp/view/itemOrder.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNative=require(43 /* react-native */);
 
@@ -86511,8 +86511,8 @@ paddingRight:10},
 detailListReg:{
 color:"#555",
 paddingBottom:5}});
-}, "FGIApp/view/itemOrder.js");
-__d(760 /* FGIApp/view/alipay.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+}, "DNAapp/view/itemOrder.js");
+__d(760 /* DNAapp/view/alipay.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNativeQrcode=require(761 /* react-native-qrcode */);var _reactNativeQrcode2=babelHelpers.interopRequireDefault(_reactNativeQrcode);
 var _reactNative=require(43 /* react-native */);
@@ -86662,7 +86662,7 @@ borderRadius:2,
 backgroundColor:'#BEBEBE',
 justifyContent:'center',
 alignItems:'center'}});
-}, "FGIApp/view/alipay.js");
+}, "DNAapp/view/alipay.js");
 __d(761 /* react-native-qrcode/index.js */, function(global, require, module, exports) {module.exports=require(762 /* ./lib/QRCode.js */);
 }, "react-native-qrcode/index.js");
 __d(762 /* react-native-qrcode/lib/QRCode.js */, function(global, require, module, exports) {'use strict';
@@ -88032,9 +88032,9 @@ QRMath.LOG_TABLE[QRMath.EXP_TABLE[i]]=i;
 
 module.exports=QRMath;
 }, "qr.js/lib/math.js");
-__d(774 /* FGIApp/view/img/detail1.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":801,"height":2818,"scales":[1],"files":["/Users/chalene/FGIApp副本/view/img/detail1.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"detail1","type":"jpg"});
-}, "FGIApp/view/img/detail1.jpg");
-__d(775 /* FGIApp/view/order.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+__d(774 /* DNAapp/view/img/detail1.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":801,"height":2818,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/detail1.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"detail1","type":"jpg"});
+}, "DNAapp/view/img/detail1.jpg");
+__d(775 /* DNAapp/view/order.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNative=require(43 /* react-native */);
 
@@ -88749,8 +88749,8 @@ paddingRight:10},
 detailListReg:{
 color:"#555",
 paddingBottom:5}});
-}, "FGIApp/view/order.js");
-__d(776 /* FGIApp/view/update.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+}, "DNAapp/view/order.js");
+__d(776 /* DNAapp/view/update.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
 var _reactNative=require(43 /* react-native */);
 
@@ -88983,12 +88983,12 @@ centering:{
 alignItems:'center',
 justifyContent:'center',
 padding:8}});
-}, "FGIApp/view/update.js");
-__d(777 /* FGIApp/view/img/chip.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/FGIApp副本/view/img/chip.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"chip","type":"jpg"});
-}, "FGIApp/view/img/chip.jpg");
-__d(778 /* FGIApp/view/img/forensics.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/FGIApp副本/view/img/forensics.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"forensics","type":"jpg"});
-}, "FGIApp/view/img/forensics.jpg");
-__d(779 /* FGIApp/view/img/DNA1.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":903,"height":901,"scales":[1],"files":["/Users/chalene/FGIApp副本/view/img/DNA1.png"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"DNA1","type":"png"});
-}, "FGIApp/view/img/DNA1.png");
+}, "DNAapp/view/update.js");
+__d(777 /* DNAapp/view/img/chip.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/chip.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"chip","type":"jpg"});
+}, "DNAapp/view/img/chip.jpg");
+__d(778 /* DNAapp/view/img/forensics.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/forensics.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"forensics","type":"jpg"});
+}, "DNAapp/view/img/forensics.jpg");
+__d(779 /* DNAapp/view/img/DNA1.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":903,"height":901,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/DNA1.png"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"DNA1","type":"png"});
+}, "DNAapp/view/img/DNA1.png");
 ;require(187);
 ;require(0);

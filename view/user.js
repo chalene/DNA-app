@@ -506,7 +506,7 @@ class UserAbout extends Component{
   render() {
     return(
       <View>
-        <Text style={styles.userSettingContainer}>华大司法微代理APP由华大司法云团队开发和维护。</Text>
+        <Text style={styles.userSettingContainer}>华大司法DNA档案APP由华大司法云团队开发和维护。</Text>
         <Text style={styles.userSettingContainer}>All rights reserved.</Text>
       </View>
     );
@@ -854,7 +854,7 @@ class UserView extends Component{
 
   _onAboutPress() {
     this.props.navigator.push({
-      title: "关于微代理",
+      title: "关于DNA档案APP",
       component:UserAbout,
       navigationBarHidden: false,
     })

@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTTextField.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTTextField.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTTextField.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTTextField.h \
   ../../React/Views/RCTComponent.h ../../React/Base/RCTConvert.h \
   ../../React/Layout/Layout.h ../../React/Views/RCTAnimationType.h \
   ../../React/Views/RCTBorderStyle.h \

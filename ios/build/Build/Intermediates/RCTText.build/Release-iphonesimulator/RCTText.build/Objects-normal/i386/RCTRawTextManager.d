@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTRawTextManager.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTRawTextManager.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTRawTextManager.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTRawTextManager.h \
   ../../React/Views/RCTViewManager.h ../../React/Base/RCTBridgeModule.h \
   ../../React/Base/RCTDefines.h ../../React/Base/RCTConvert.h \
   ../../React/Layout/Layout.h ../../React/Views/RCTAnimationType.h \
@@ -13,5 +13,5 @@ dependencies: \
   ../../React/Base/RCTInvalidating.h \
   ../../React/Base/RCTJavaScriptExecutor.h \
   ../../React/Views/UIView+React.h ../../React/Views/RCTComponent.h \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTShadowRawText.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTShadowRawText.h \
   ../../React/Views/RCTShadowView.h ../../React/Base/RCTRootView.h

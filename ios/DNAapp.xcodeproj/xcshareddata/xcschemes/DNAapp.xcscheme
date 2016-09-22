@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "FGIApp.app"
-               BlueprintName = "FGIApp"
+               BuildableName = "DNAapp.app"
+               BlueprintName = "DNAapp"
                ReferencedContainer = "container:DNAapp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "FGIAppTests.xctest"
-               BlueprintName = "FGIAppTests"
+               BuildableName = "DNAappTests.xctest"
+               BlueprintName = "DNAappTests"
                ReferencedContainer = "container:DNAapp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "FGIAppTests.xctest"
-               BlueprintName = "FGIAppTests"
+               BuildableName = "DNAappTests.xctest"
+               BlueprintName = "DNAappTests"
                ReferencedContainer = "container:DNAapp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "FGIApp.app"
-            BlueprintName = "FGIApp"
+            BuildableName = "DNAapp.app"
+            BlueprintName = "DNAapp"
             ReferencedContainer = "container:DNAapp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "FGIApp.app"
-            BlueprintName = "FGIApp"
+            BuildableName = "DNAapp.app"
+            BlueprintName = "DNAapp"
             ReferencedContainer = "container:DNAapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,8 +99,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "FGIApp.app"
-            BlueprintName = "FGIApp"
+            BuildableName = "DNAapp.app"
+            BlueprintName = "DNAapp"
             ReferencedContainer = "container:DNAapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

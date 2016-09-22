@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-activity-view/ActivityView.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-activity-view/ActivityView.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-activity-view/ActivityView.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-activity-view/ActivityView.h \
   ../react-native/React/Base/RCTBridgeModule.h \
   ../react-native/React/Base/RCTDefines.h \
   ../react-native/React/Base/RCTLog.h \
@@ -22,7 +22,7 @@ dependencies: \
   ../react-native/React/Views/UIView+React.h \
   ../react-native/React/Views/RCTComponent.h \
   ../react-native/React/Base/RCTRootView.h \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-activity-view/../react-native/Libraries/Image/RCTImageLoader.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-activity-view/../react-native/Libraries/Image/RCTImageLoader.h \
   ../react-native/React/Base/RCTURLRequestHandler.h \
   ../react-native/React/Base/RCTURLRequestDelegate.h \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-activity-view/../react-native/Libraries/Image/RCTResizeMode.h
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-activity-view/../react-native/Libraries/Image/RCTResizeMode.h

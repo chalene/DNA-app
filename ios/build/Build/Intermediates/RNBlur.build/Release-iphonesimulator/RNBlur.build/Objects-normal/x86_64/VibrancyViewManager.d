@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-blur/ios/VibrancyViewManager.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-blur/ios/VibrancyViewManager.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-blur/ios/VibrancyViewManager.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-blur/ios/VibrancyViewManager.h \
   ../../react-native/React/Views/RCTViewManager.h \
   ../../react-native/React/Base/RCTBridgeModule.h \
   ../../react-native/React/Base/RCTDefines.h \
@@ -20,4 +20,4 @@ dependencies: \
   ../../react-native/React/Base/RCTJavaScriptExecutor.h \
   ../../react-native/React/Views/UIView+React.h \
   ../../react-native/React/Views/RCTComponent.h \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-blur/ios/VibrancyView.h
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-blur/ios/VibrancyView.h

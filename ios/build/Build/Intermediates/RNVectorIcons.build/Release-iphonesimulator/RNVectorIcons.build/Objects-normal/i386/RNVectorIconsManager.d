@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.h \
   ../react-native/React/Base/RCTBridgeModule.h \
   ../react-native/React/Base/RCTDefines.h \
   ../react-native/React/Base/RCTLog.h \

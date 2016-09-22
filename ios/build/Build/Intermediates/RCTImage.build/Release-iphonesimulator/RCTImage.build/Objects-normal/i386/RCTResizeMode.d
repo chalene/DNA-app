@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Image/RCTResizeMode.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Image/RCTResizeMode.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Image/RCTResizeMode.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Image/RCTResizeMode.h \
   ../../React/Base/RCTConvert.h ../../React/Layout/Layout.h \
   ../../React/Views/RCTAnimationType.h \
   ../../React/Views/RCTBorderStyle.h \

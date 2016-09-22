@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTTextFieldManager.m \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTTextFieldManager.h \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTTextFieldManager.m \
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTTextFieldManager.h \
   ../../React/Views/RCTViewManager.h ../../React/Base/RCTBridgeModule.h \
   ../../React/Base/RCTDefines.h ../../React/Base/RCTConvert.h \
   ../../React/Layout/Layout.h ../../React/Views/RCTAnimationType.h \
@@ -14,4 +14,4 @@ dependencies: \
   ../../React/Base/RCTJavaScriptExecutor.h \
   ../../React/Views/UIView+React.h ../../React/Views/RCTComponent.h \
   ../../React/Views/RCTShadowView.h ../../React/Base/RCTRootView.h \
-  /Users/chalene/workshop/FGIApp副本/node_modules/react-native/Libraries/Text/RCTTextField.h
+  /Users/chalene/workshop/DNAapp副本/node_modules/react-native/Libraries/Text/RCTTextField.h
