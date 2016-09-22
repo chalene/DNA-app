@@ -42,7 +42,7 @@ class ProfileDetail extends Component{
   render() {
     return(
         <WebView
-          automaticallyAdjustContentInsets={false}
+          automaticallyAdjustContentInsets={true}
           source={{uri: this.props.data.url}}//{{uri: 'http://172.16.68.69:8000/ios/show_dnaprofile_report/?id=19892',}} //
           javaScriptEnabled={true}
           domStorageEnabled={true}
@@ -60,7 +60,7 @@ class ProfileListItems extends Component{
 
   _renderProfileDetail = (data) => {
     this.props.navigator.push({
-      title: "订单详情",
+      title: "档案详情",
       tintColor:data.bg,
       component:ProfileDetail,
       navigationBarHidden: false,

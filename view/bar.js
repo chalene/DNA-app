@@ -56,6 +56,14 @@ class Bar extends Component{
       <TabBarIOS
         tintColor="#1E868C">
         <Icon.TabBarItem
+          title="华大商城"
+          iconName="ios-home-outline"
+          selectedIconName="ios-home"
+          onPress={ () => this._changeTab('华大商城') }
+          selected={ this.state.selectedTab === '华大商城' }>
+          <Store uid={this.props.uid}/>
+        </Icon.TabBarItem>
+        <Icon.TabBarItem  //newly-added
           title="查看DNA档案"
           iconName="ios-body-outline"
           selectedIconName="ios-body"
