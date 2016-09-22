@@ -1506,6 +1506,8 @@ var _signup=require(748 /* ./view/signup */);var _signup2=babelHelpers.interopRe
 var _bar=require(756 /* ./view/bar */);var _bar2=babelHelpers.interopRequireDefault(_bar);
 var _utils=require(630 /* ./view/utils */);var _utils2=babelHelpers.interopRequireDefault(_utils);var
 
+
+
 DNAapp=function(_Component){babelHelpers.inherits(DNAapp,_Component);
 function DNAapp(){babelHelpers.classCallCheck(this,DNAapp);var _this2=babelHelpers.possibleConstructorReturn(this,(DNAapp.__proto__||Object.getPrototypeOf(DNAapp)).call(this));_this2.
 
@@ -1564,6 +1566,8 @@ done(function(){
 var lsView=null;
 console.log(_this2.state);
 if(_this2.state.isLogin){
+
+
 content=_react2.default.createElement(_bar2.default,{
 uid:_this2.state.uid,
 isFirstTime:_this2.state.isFirstTime,
@@ -1584,7 +1588,7 @@ callbackLogin:_this2._onStateChange.bind(_this2)});
 
 }
 content=_react2.default.createElement(_reactNative.View,{style:styles.container},
-_react2.default.createElement(_reactNative.Image,{source:require(779 /* ./view/img/DNA1.png */),style:styles.bgImageWrapper}),
+_react2.default.createElement(_reactNative.Image,{source:require(783 /* ./view/img/DNA1.png */),style:styles.bgImageWrapper}),
 _react2.default.createElement(_reactNative.View,null,
 _react2.default.createElement(_reactNative.Image,{style:styles.logo,source:{uri:'dna15'}}),
 _react2.default.createElement(_reactNative.Text,{style:styles.logoText},'华大DNA')),
@@ -64856,7 +64860,7 @@ resizeMode:'contain'}});
 
 module.exports=NavigationHeaderBackButton;
 }, "NavigationHeaderBackButton");
-__d(515 /* react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","httpServerLocation":"/assets/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","width":24,"height":24,"scales":[1,1.5,2,3,4],"files":["/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1.5x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@2x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@3x.ios.png","/Users/chalene/DNAapp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@4x.ios.png"],"hash":"245e08fe05e1b838a211e960791ace93","name":"back-icon","type":"png"});
+__d(515 /* react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/Workshop/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","httpServerLocation":"/assets/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","width":24,"height":24,"scales":[1,1.5,2,3,4],"files":["/Users/chalene/Workshop/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1x.ios.png","/Users/chalene/Workshop/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@1.5x.ios.png","/Users/chalene/Workshop/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@2x.ios.png","/Users/chalene/Workshop/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@3x.ios.png","/Users/chalene/Workshop/FGIApp副本/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon@4x.ios.png"],"hash":"245e08fe05e1b838a211e960791ace93","name":"back-icon","type":"png"});
 }, "react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png");
 __d(516 /* NavigationHeaderStyleInterpolator */, function(global, require, module, exports) {
 
@@ -82849,8 +82853,10 @@ module.exports={
 
 
 
-shop_url:'http://172.16.68.71:8000/shop',
-url:'http://172.16.68.71:8000/iosapp'};
+
+
+shop_url:'https://dnafw.com/shop',
+url:'https://dnafw.com/ios'};
 }, "DNAapp/config.js");
 __d(748 /* DNAapp/view/signup.js */, function(global, require, module, exports) {'use strict';
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
@@ -83731,7 +83737,7 @@ UserAbout=function(_Component8){babelHelpers.inherits(UserAbout,_Component8);fun
 {
 return(
 _react2.default.createElement(_reactNative.View,null,
-_react2.default.createElement(_reactNative.Text,{style:styles.userSettingContainer},'华大司法微代理APP由华大司法云团队开发和维护。'),
+_react2.default.createElement(_reactNative.Text,{style:styles.userSettingContainer},'华大司法DNA档案APP由华大司法云团队开发和维护。'),
 _react2.default.createElement(_reactNative.Text,{style:styles.userSettingContainer},'All rights reserved.')));
 
 
@@ -84079,7 +84085,7 @@ navigationBarHidden:false});
 
 {
 this.props.navigator.push({
-title:"关于微代理",
+title:"关于DNA档案APP",
 component:UserAbout,
 navigationBarHidden:false});
 
@@ -84114,30 +84120,13 @@ _react2.default.createElement(_reactNative.View,{style:styles.bgImageWrapper},
 _react2.default.createElement(_reactNativeBlur.BlurView,{blurType:'light',style:styles.blur},
 _react2.default.createElement(_reactNative.Image,{source:require(755 /* ./img/logo.png */),style:styles.icon}),
 
-_react2.default.createElement(_reactNative.Text,{style:{fontSize:18,color:"#3a3a3a"}},data.username?data.username:"用户名未设置"),
-_react2.default.createElement(_reactNative.Text,{style:{fontSize:11,color:"#3a3a3a",marginTop:5}},'帐号：',data.cellphone),
-_react2.default.createElement(_reactNative.Text,{style:{fontSize:11,color:"#3a3a3a",marginTop:5}},'钱包：¥',this.state.balance,'（可提现） ¥',this.state.balance,'(冻结）'),
-_react2.default.createElement(_reactNative.Text,{style:{fontSize:11,color:"#3a3a3a",marginTop:5}},'银行卡：',data.alipay?data.alipay:"未绑定银行卡"))))),
+_react2.default.createElement(_reactNative.Text,{style:{fontSize:18,color:"#3a3a3a"}},data.username?data.username:"用户名未设置"))))),
 
 
 
 
 
 this._renderFirstTimeMsg(),
-_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#f1f1f1',style:styles.userMenuContainer,onPress:function onPress(){return _this25._onPursePress();}},
-_react2.default.createElement(_reactNative.View,{style:styles.userMenu},
-_react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavIcon,name:'shopping-bag',size:18}),
-_react2.default.createElement(_reactNative.Text,null,'我的钱包'),
-_react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavMenu,name:'angle-right',size:20}))),
-
-
-_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#f1f1f1',style:styles.userMenuContainer,onPress:function onPress(){return _this25._onIncomePress();}},
-_react2.default.createElement(_reactNative.View,{style:styles.userMenu},
-_react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavIcon,name:'list-alt',size:18}),
-_react2.default.createElement(_reactNative.Text,null,'支出明细'),
-_react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavMenu,name:'angle-right',size:20}))),
-
-
 _react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#f1f1f1',style:styles.userMenuContainer,onPress:function onPress(){return _this25._onHelpPress();}},
 _react2.default.createElement(_reactNative.View,{style:styles.userMenu},
 _react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavIcon,name:'question-circle',size:18}),
@@ -84148,7 +84137,7 @@ _react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavMenu,na
 _react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#f1f1f1',style:styles.userMenuContainer,onPress:function onPress(){return _this25._onAboutPress();}},
 _react2.default.createElement(_reactNative.View,{style:styles.userMenu},
 _react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavIcon,name:'info-circle',size:18}),
-_react2.default.createElement(_reactNative.Text,null,'关于微代理'),
+_react2.default.createElement(_reactNative.Text,null,'关于DNA档案APP'),
 _react2.default.createElement(_FontAwesome2.default,{style:styles.itemNavMenu,name:'angle-right',size:20}))),
 
 
@@ -84510,7 +84499,7 @@ var NativeVibrancyView=(0,_reactNative.requireNativeComponent)('VibrancyView',Vi
 
 module.exports=VibrancyView;
 }, "react-native-blur/src/VibrancyView.ios.js");
-__d(755 /* DNAapp/view/img/logo.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":198,"height":198,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/logo.png"],"hash":"ff2e7aa00d32f96b227c92ccf3aa0459","name":"logo","type":"png"});
+__d(755 /* DNAapp/view/img/logo.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/Workshop/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":198,"height":198,"scales":[1],"files":["/Users/chalene/Workshop/FGIApp副本/view/img/logo.png"],"hash":"ff2e7aa00d32f96b227c92ccf3aa0459","name":"logo","type":"png"});
 }, "DNAapp/view/img/logo.png");
 __d(756 /* DNAapp/view/bar.js */, function(global, require, module, exports) {'use strict';
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
@@ -84525,7 +84514,8 @@ var _Ionicons=require(757 /* react-native-vector-icons/Ionicons */);var _Ionicon
 var _store=require(758 /* ./store */);var _store2=babelHelpers.interopRequireDefault(_store);
 var _user=require(749 /* ./user */);var _user2=babelHelpers.interopRequireDefault(_user);
 var _order=require(775 /* ./order */);var _order2=babelHelpers.interopRequireDefault(_order);
-var _update=require(776 /* ./update */);var _update2=babelHelpers.interopRequireDefault(_update);var
+var _update=require(776 /* ./update */);var _update2=babelHelpers.interopRequireDefault(_update);
+var _profile=require(779 /* ./profile */);var _profile2=babelHelpers.interopRequireDefault(_profile);var
 
 
 
@@ -84569,36 +84559,12 @@ return(
 _react2.default.createElement(_reactNative.TabBarIOS,{
 tintColor:'#1E868C'},
 _react2.default.createElement(_Ionicons2.default.TabBarItem,{
-title:'华大商城',
-iconName:'ios-home-outline',
-selectedIconName:'ios-home',
-onPress:function onPress(){return _this2._changeTab('华大商城');},
-selected:this.state.selectedTab==='华大商城'},
-_react2.default.createElement(_store2.default,{uid:this.props.uid})),
-
-_react2.default.createElement(_Ionicons2.default.TabBarItem,{
-title:'推广动态',
-iconName:'ios-eye-outline',
-selectedIconName:'ios-eye',
-onPress:function onPress(){return _this2._changeTab('推广动态');},
-selected:this.state.selectedTab==='推广动态'},
-_react2.default.createElement(_update2.default,{uid:this.props.uid})),
-
-_react2.default.createElement(_Ionicons2.default.TabBarItem,{
 title:'查看DNA档案',
 iconName:'ios-body-outline',
 selectedIconName:'ios-body',
 onPress:function onPress(){return _this2._changeTab('查看DNA档案');},
 selected:this.state.selectedTab==='查看DNA档案'},
-_react2.default.createElement(_order2.default,{uid:this.props.uid})),
-
-_react2.default.createElement(_Ionicons2.default.TabBarItem,{
-title:'全部订单',
-iconName:'ios-list-outline',
-selectedIconName:'ios-list',
-onPress:function onPress(){return _this2._changeTab('全部订单');},
-selected:this.state.selectedTab==='全部订单'},
-_react2.default.createElement(_order2.default,{uid:this.props.uid})),
+_react2.default.createElement(_profile2.default,{uid:this.props.uid})),
 
 _react2.default.createElement(_Ionicons2.default.TabBarItem,{
 title:'我的帐户',
@@ -84610,7 +84576,53 @@ _react2.default.createElement(_user2.default,{uid:this.props.uid,isFirstTime:thi
 
 
 
+
+
+
 }}]);return Bar;}(_react.Component);Bar.defaultProps={isFirstTime:"0"};Bar.propTypes={uid:_react2.default.PropTypes.string.isRequired,isFirstTime:_react2.default.PropTypes.string.isRequired};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 module.exports=Bar;
@@ -88032,7 +88044,7 @@ QRMath.LOG_TABLE[QRMath.EXP_TABLE[i]]=i;
 
 module.exports=QRMath;
 }, "qr.js/lib/math.js");
-__d(774 /* DNAapp/view/img/detail1.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":801,"height":2818,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/detail1.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"detail1","type":"jpg"});
+__d(774 /* DNAapp/view/img/detail1.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/Workshop/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":801,"height":2818,"scales":[1],"files":["/Users/chalene/Workshop/FGIApp副本/view/img/detail1.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"detail1","type":"jpg"});
 }, "DNAapp/view/img/detail1.jpg");
 __d(775 /* DNAapp/view/order.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
@@ -88553,7 +88565,8 @@ _react2.default.createElement(_reactNative.Text,{style:{color:"#fff"}},'订单�
 _react2.default.createElement(_reactNative.View,{style:styles.orderInfo},
 _react2.default.createElement(_reactNative.Text,{style:{marginBottom:5}},'订单项目：',rowData.item),
 _react2.default.createElement(_reactNative.Text,{style:{marginBottom:5}},'创建日期：',rowData.date),
-_react2.default.createElement(_reactNative.Text,null,'预计完成：',rowData.send)))));
+_react2.default.createElement(_reactNative.Text,null,'预计完成：',rowData.send),
+_react2.default.createElement(_reactNative.Text,{style:styles.detailListReg},_react2.default.createElement(_reactNative.Text,{style:styles.detailListEm},'URL：'),rowData.url)))));
 
 
 
@@ -88797,7 +88810,7 @@ UpdateDetail=function(_Component){babelHelpers.inherits(UpdateDetail,_Component)
 return(
 _react2.default.createElement(_reactNative.WebView,{
 automaticallyAdjustContentInsets:false,
-source:{uri:this.props.data.link},
+source:{uri:'http://172.16.68.69:8000/ios/test/'},
 javaScriptEnabled:true,
 domStorageEnabled:true,
 decelerationRate:'normal',
@@ -88984,11 +88997,2061 @@ alignItems:'center',
 justifyContent:'center',
 padding:8}});
 }, "DNAapp/view/update.js");
-__d(777 /* DNAapp/view/img/chip.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/chip.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"chip","type":"jpg"});
+__d(777 /* DNAapp/view/img/chip.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/Workshop/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/Workshop/FGIApp副本/view/img/chip.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"chip","type":"jpg"});
 }, "DNAapp/view/img/chip.jpg");
-__d(778 /* DNAapp/view/img/forensics.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/forensics.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"forensics","type":"jpg"});
+__d(778 /* DNAapp/view/img/forensics.jpg */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/Workshop/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":450,"height":360,"scales":[1],"files":["/Users/chalene/Workshop/FGIApp副本/view/img/forensics.jpg"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"forensics","type":"jpg"});
 }, "DNAapp/view/img/forensics.jpg");
-__d(779 /* DNAapp/view/img/DNA1.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/DNAapp副本/view/img","httpServerLocation":"/assets/view/img","width":903,"height":901,"scales":[1],"files":["/Users/chalene/DNAapp副本/view/img/DNA1.png"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"DNA1","type":"png"});
+__d(779 /* DNAapp/view/profile.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
+var _reactNativeQrcode=require(761 /* react-native-qrcode */);var _reactNativeQrcode2=babelHelpers.interopRequireDefault(_reactNativeQrcode);
+var _reactNative=require(43 /* react-native */);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _utils=require(630 /* ./utils */);var _utils2=babelHelpers.interopRequireDefault(_utils);
+var _FontAwesome=require(631 /* react-native-vector-icons/FontAwesome */);var _FontAwesome2=babelHelpers.interopRequireDefault(_FontAwesome);
+var _reactNativeActivityView=require(750 /* react-native-activity-view */);var _reactNativeActivityView2=babelHelpers.interopRequireDefault(_reactNativeActivityView);
+var _reactNativeImagePicker=require(751 /* react-native-image-picker */);var _reactNativeImagePicker2=babelHelpers.interopRequireDefault(_reactNativeImagePicker);
+var _reactNativeBlur=require(752 /* react-native-blur */);
+var _reactNativeForm=require(745 /* react-native-form */);var _reactNativeForm2=babelHelpers.interopRequireDefault(_reactNativeForm);
+var _checkProfile=require(780 /* ./checkProfile */);var _checkProfile2=babelHelpers.interopRequireDefault(_checkProfile);
+var _verifyFace=require(781 /* ./verifyFace */);var _verifyFace2=babelHelpers.interopRequireDefault(_verifyFace);
+var _signupFace=require(782 /* ./signupFace */);var _signupFace2=babelHelpers.interopRequireDefault(_signupFace);
+
+
+
+var _config=require(747 /* ../config */);var
+
+
+
+
+
+
+
+
+
+
+loginAgain=function(_Component){babelHelpers.inherits(loginAgain,_Component);
+
+
+
+
+
+
+
+
+
+
+function loginAgain(props){babelHelpers.classCallCheck(this,loginAgain);var _this=babelHelpers.possibleConstructorReturn(this,(loginAgain.__proto__||Object.getPrototypeOf(loginAgain)).call(this,
+props));
+
+
+_this.state={
+isLogin:_this.props.isLogin};return _this;
+
+}babelHelpers.createClass(loginAgain,[{key:'componentDidMount',value:function componentDidMount()
+
+{
+
+}},{key:'_login',value:function _login()
+
+{var _this2=this;
+
+_utils2.default.post(_config.url+'/check_password/',{
+password:this.refs.form.getValues().password,
+uid:this.props.uid},
+function(resData){
+if(resData){
+if(resData.loginState=="1"){
+
+_this2.props.navigator.push({
+title:"DNA档案列表",
+component:_checkProfile2.default,
+navigationBarHidden:false,
+passProps:{uid:_this2.props.uid}});
+
+}else{
+
+
+_reactNative.AlertIOS.alert('登陆失败','密码验证不通过');
+
+}
+}else{
+_reactNative.AlertIOS.alert('登陆失败','服务器无响应');
+}
+});
+}},{key:'render',value:function render()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{var _this3=this;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{style:styles.profileListContainer},
+_react2.default.createElement(_reactNativeForm2.default,{ref:'form'},
+_react2.default.createElement(_reactNative.View,{style:styles.inputRow},
+_react2.default.createElement(_reactNative.TextInput,{type:'TextInput',name:'password',ref:'SecondInput',placeholderTextColor:'#777',style:styles.input,placeholder:'密码',password:true}),
+_react2.default.createElement(_FontAwesome2.default,{name:'lock',style:styles.icon,size:20}))),
+
+
+_react2.default.createElement(_reactNative.View,{style:styles.inputRow},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#48aeb4',style:styles.btn_pm,onPress:function onPress(){return _this3._login();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff'}},'确认')))));
+
+
+
+
+}}]);return loginAgain;}(_react.Component);loginAgain.defaultProps={isLogin:false};loginAgain.propTypes={uid:_react2.default.PropTypes.string.isRequired,isLogin:_react2.default.PropTypes.bool.isRequired};var
+
+
+
+
+
+verifyUser=function(_Component2){babelHelpers.inherits(verifyUser,_Component2);
+
+
+
+
+
+
+
+
+
+
+
+function verifyUser(props){babelHelpers.classCallCheck(this,verifyUser);var _this4=babelHelpers.possibleConstructorReturn(this,(verifyUser.__proto__||Object.getPrototypeOf(verifyUser)).call(this,
+props));
+
+_this4.onFacePress=_this4._FaceRequire.bind(_this4);
+
+_this4.state={
+onFaceSignup:false};return _this4;
+
+}babelHelpers.createClass(verifyUser,[{key:'componentDidMount',value:function componentDidMount()
+
+{
+
+}},{key:'componentWillMount',value:function componentWillMount()
+
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}},{key:'_FaceRequire',value:function _FaceRequire()
+
+{var _this5=this;
+_utils2.default.post(_config.url+'/check_face_uploaded/',{uid:this.props.uid},function(resData){
+if(resData){
+if(resData.exist==="true"){
+_this5.props.navigator.push({
+title:"人脸识别登录",
+component:_verifyFace2.default,
+navigationBarHidden:false,
+passProps:{
+uid:_this5.props.uid}});
+
+
+
+
+
+}else{
+_this5.props.navigator.push({
+title:"人脸识别注册",
+component:_signupFace2.default,
+navigationBarHidden:false,
+passProps:{
+uid:_this5.props.uid}});
+
+
+
+
+
+
+
+
+}
+}else{
+_reactNative.AlertIOS.alert('登陆失败','服务器无响应');
+}
+});
+}},{key:'_onPasswordPress',value:function _onPasswordPress()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+this.props.navigator.push({
+title:"输入密码查看",
+component:loginAgain,
+navigationBarHidden:false,
+passProps:{uid:this.props.uid}});
+
+}},{key:'_onCheckprofilePress',value:function _onCheckprofilePress(
+
+data){
+this.props.navigator.push({
+title:"DNA档案列表",
+component:_checkProfile2.default,
+
+passProps:{uid:this.props.uid}});
+
+}},{key:'render',value:function render()
+
+{var _this6=this;var
+data=this.props.data;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{showsVerticalScrollIndicator:false,style:styles.userContainer},
+_react2.default.createElement(_reactNative.View,{style:{alignItems:"center",width:_utils2.default.size.width}},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#FFF5EE',style:styles.big_button,onPress:function onPress(){return _this6.onFacePress();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff',fontSize:22}},'人脸识别'))),
+
+
+_react2.default.createElement(_reactNative.View,{style:{alignItems:"center",width:_utils2.default.size.width}},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#FFF5EE',style:styles.big_button,onPress:function onPress(){return _this6._onPasswordPress();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff',fontSize:22}},'密码查看')))));
+
+
+
+
+}}]);return verifyUser;}(_react.Component);verifyUser.propTypes={uid:_react2.default.PropTypes.string.isRequired,onFacePress:_react2.default.PropTypes.func.isRequired};var _class=function(_Component3){babelHelpers.inherits(_class,_Component3);function _class(){babelHelpers.classCallCheck(this,_class);return babelHelpers.possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).apply(this,arguments));}babelHelpers.createClass(_class,[{key:'componentDidMount',value:function componentDidMount()
+
+
+
+
+
+
+
+{
+
+}},{key:'render',value:function render()
+
+{
+return(
+_react2.default.createElement(_reactNative.NavigatorIOS,{
+ref:'nav',
+style:styles.container,
+initialRoute:{
+title:"DNA档案",
+component:verifyUser,
+passProps:{uid:this.props.uid},
+shadowHidden:true},
+
+itemWrapperStyle:styles.itemWrapper,
+tintColor:'#777'}));
+
+
+}}]);return _class;}(_react.Component);_class.propTypes={uid:_react2.default.PropTypes.string.isRequired};exports.default=_class;
+
+
+var styles=_reactNative.StyleSheet.create({
+big_button:{
+marginTop:0.2*_utils2.default.size.width,
+marginBottom:13,
+width:0.5*_utils2.default.size.width,
+height:0.4*_utils2.default.size.width,
+borderRadius:2,
+backgroundColor:'#1E868C',
+justifyContent:'center',
+alignItems:'center'},
+
+profileListContainer:{
+position:"relative",
+top:40},
+
+icon:{
+position:'absolute',
+right:10,
+top:9,
+color:'#999',
+backgroundColor:"transparent"},
+
+inputRow:{
+flexDirection:'row',
+alignItems:'center',
+justifyContent:'center',
+marginBottom:20},
+
+input:{
+
+
+width:_utils2.default.size.width-80,
+borderWidth:_utils2.default.pixel,
+height:40,
+paddingLeft:12,
+borderColor:'#eee',
+borderRadius:1,
+color:"#333",
+backgroundColor:"rgba(255, 255, 255, 0.75)"},
+
+container:{
+flex:1},
+
+itemWrapper:{
+backgroundColor:'#eaeaea'},
+
+userContainer:{
+position:"relative",
+top:0},
+
+userMenuContainer:{
+height:45,
+borderTopWidth:_utils2.default.pixel,
+borderTopColor:"#bbb",
+borderBottomWidth:_utils2.default.pixel,
+borderBottomColor:"#bbb",
+backgroundColor:"#f7f7f7",
+flex:1,
+marginBottom:20},
+
+userMenu:{
+paddingLeft:50,
+height:45,
+justifyContent:'center'},
+
+
+itemNavIcon:{
+position:"absolute",
+top:13,
+left:20,
+color:"#454545",
+backgroundColor:"transparent"},
+
+itemNavMenu:{
+position:"absolute",
+top:12,
+right:10,
+color:"#bbb",
+backgroundColor:"transparent"},
+
+orderContainer:{
+alignItems:'center',
+flex:1,
+width:_utils2.default.size.width-40,
+marginLeft:20,marginTop:10},
+
+orderInputContainer:{
+marginTop:20},
+
+orderInputText:{
+fontSize:12},
+
+orderInput:{
+marginTop:10,
+paddingLeft:10,
+paddingRight:10,
+paddingTop:5,
+paddingBottom:5,
+width:_utils2.default.size.width-80,
+borderWidth:_utils2.default.pixel,
+height:40,
+borderColor:'#777',
+borderRadius:2,
+color:"#333"},
+
+orderButtonContainer:{
+marginTop:20,
+width:_utils2.default.size.width-40,
+marginLeft:20,
+alignItems:"center"},
+
+uploadFace:{
+height:100,
+width:100,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+uploadId:{
+height:100,
+width:100,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+btn_pm:{
+marginTop:13,
+width:0.8*_utils2.default.size.width,
+height:40,
+borderRadius:2,
+backgroundColor:'#1E868C',
+justifyContent:'center',
+alignItems:'center'},
+
+btn_cm:{
+marginTop:13,
+width:0.8*_utils2.default.size.width,
+height:40,
+borderRadius:2,
+backgroundColor:'#BEBEBE',
+justifyContent:'center',
+alignItems:'center'},
+
+btn_if:{
+marginTop:10,
+width:_utils2.default.size.width-80,
+height:40,
+borderRadius:2,
+justifyContent:'center',
+alignItems:'center'},
+
+section:{
+backgroundColor:"#f3f3f3",
+paddingLeft:15,
+paddingTop:7,
+paddingBottom:7,
+borderBottomColor:"#ddd",
+borderBottomWidth:_utils2.default.pixel},
+
+sectionText:{},
+
+
+incomeRow:{
+backgroundColor:"#fff",
+height:60,
+borderBottomColor:"#ddd",
+borderBottomWidth:_utils2.default.pixel,
+flexDirection:"row",
+paddingLeft:15,
+paddingRight:15,
+justifyContent:"center"},
+
+incomeRowActive:{
+opacity:1},
+
+incomeRowNotActive:{
+opacity:0.45},
+
+incomeRowText:{
+flex:1,
+justifyContent:"center"},
+
+incomeRowIcon:{
+flex:1,
+justifyContent:"center"},
+
+incomeRowOrder:{
+flex:3,
+justifyContent:"center"},
+
+userSettingContainer:{
+marginTop:100,
+marginLeft:30}});
+}, "DNAapp/view/profile.js");
+__d(780 /* DNAapp/view/checkProfile.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
+var _reactNative=require(43 /* react-native */);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _utils=require(630 /* ./utils */);var _utils2=babelHelpers.interopRequireDefault(_utils);
+var _FontAwesome=require(631 /* react-native-vector-icons/FontAwesome */);var _FontAwesome2=babelHelpers.interopRequireDefault(_FontAwesome);
+
+
+var _config=require(747 /* ../config */);var
+
+
+
+
+
+
+
+
+
+
+
+ProfileDetail=function(_Component){babelHelpers.inherits(ProfileDetail,_Component);function ProfileDetail(){babelHelpers.classCallCheck(this,ProfileDetail);return babelHelpers.possibleConstructorReturn(this,(ProfileDetail.__proto__||Object.getPrototypeOf(ProfileDetail)).apply(this,arguments));}babelHelpers.createClass(ProfileDetail,[{key:'render',value:function render()
+
+
+
+
+{
+return(
+_react2.default.createElement(_reactNative.WebView,{
+automaticallyAdjustContentInsets:false,
+source:{uri:this.props.data.url},
+javaScriptEnabled:true,
+domStorageEnabled:true,
+decelerationRate:'normal',
+startInLoadingState:true}));
+
+
+}}]);return ProfileDetail;}(_react.Component);ProfileDetail.propTypes={data:_react2.default.PropTypes.object.isRequired};var
+
+
+ProfileListItems=function(_Component2){babelHelpers.inherits(ProfileListItems,_Component2);function ProfileListItems(){var _ref;var _temp,_this2,_ret;babelHelpers.classCallCheck(this,ProfileListItems);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this2=babelHelpers.possibleConstructorReturn(this,(_ref=ProfileListItems.__proto__||Object.getPrototypeOf(ProfileListItems)).call.apply(_ref,[this].concat(args))),_this2),_this2.
+
+
+
+
+_renderProfileDetail=function(data){
+_this2.props.navigator.push({
+title:"订单详情",
+tintColor:data.bg,
+component:ProfileDetail,
+navigationBarHidden:false,
+passProps:{data:data}});
+
+},_temp),babelHelpers.possibleConstructorReturn(_this2,_ret);}babelHelpers.createClass(ProfileListItems,[{key:'render',value:function render()
+
+{var _this3=this;
+var data=this.props.data;
+var items=data.map(function(rowData){
+return(
+_react2.default.createElement(_reactNative.TouchableHighlight,{key:rowData.order_number,style:styles.orderListTouch,underlayColor:'rgba(0,0,0,0.3)',onPress:function onPress(){return _this3._renderProfileDetail(rowData);}},
+_react2.default.createElement(_reactNative.View,{style:styles.orderList},
+_react2.default.createElement(_reactNative.View,{style:[styles.orderStatus,{backgroundColor:rowData.bg}]},
+_react2.default.createElement(_reactNative.Text,{style:{color:"#fff"}},'订单状态：',rowData.status)),
+
+_react2.default.createElement(_reactNative.View,{style:styles.orderInfo},
+_react2.default.createElement(_reactNative.Text,{style:{marginBottom:5}},'订单项目：',rowData.item),
+_react2.default.createElement(_reactNative.Text,{style:{marginBottom:5}},'创建日期：',rowData.date),
+_react2.default.createElement(_reactNative.Text,null,'DNA档案编号：',rowData.send)))));
+
+
+
+
+});
+
+return(
+_react2.default.createElement(_reactNative.View,null,
+items));
+
+
+}}]);return ProfileListItems;}(_react.Component);ProfileListItems.propTypes={data:_react2.default.PropTypes.array.isRequired};var _class=function(_Component3){babelHelpers.inherits(_class,_Component3);
+
+
+
+
+
+
+
+function _class(props){babelHelpers.classCallCheck(this,_class);var _this4=babelHelpers.possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).call(this,
+props));
+_this4.state={
+isRefreshing:false,
+loaded:0,
+rowData:[],
+refreshTitle:"下拉更新"};return _this4;
+
+}babelHelpers.createClass(_class,[{key:'componentWillMount',value:function componentWillMount()
+
+{var _this5=this;
+_utils2.default.post(_config.url+'/show_orders/',{uid:this.props.uid},function(resData){
+if(resData.error!=="true"){
+console.log(resData);
+_this5.setState({
+rowData:resData});
+
+}
+});
+}},{key:'_onRefresh',value:function _onRefresh()
+
+{var _this6=this;
+this.setState({
+isRefreshing:true,
+refreshTitle:"正在更新"});
+
+
+_utils2.default.post(_config.url+'/show_orders/',{uid:this.props.uid},function(resData){
+if(resData.error!=="true"){
+_this6.setState({
+isRefreshing:false,
+rowData:resData,
+refreshTitle:"更新完毕"});
+
+}else{
+_this6.setState({
+isRefreshing:false,
+refreshTitle:"更新失败"});
+
+}
+setTimeout(function(){
+_this6.setState({
+refreshTitle:"下拉更新"});
+
+},1000);
+});
+}},{key:'render',value:function render()
+
+{var _this7=this;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{
+style:styles.orderListContainer,
+refreshControl:
+_react2.default.createElement(_reactNative.RefreshControl,{
+refreshing:this.state.isRefreshing,
+title:this.state.refreshTitle,
+onRefresh:function onRefresh(){return _this7._onRefresh();},
+tintColor:'#ddd'})},
+
+
+_react2.default.createElement(ProfileListItems,{navigator:this.props.navigator,data:this.state.rowData})));
+
+
+}}]);return _class;}(_react.Component);_class.propTypes={uid:_react2.default.PropTypes.string.isRequired};exports.default=_class;
+
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+flex:1},
+
+itemWrapper:{
+backgroundColor:'#eaeaea'},
+
+orderListContainer:{
+position:"relative",
+top:-15},
+
+orderListTouch:{
+marginTop:15,
+marginBottom:0},
+
+orderList:{
+flex:1,
+shadowColor:"#999",
+shadowOpacity:0.2,
+shadowRadius:2,
+shadowOffset:{
+height:1,
+width:0},
+
+borderTopColor:"#bbb",
+borderBottomColor:"#bbb",
+borderTopWidth:_utils2.default.pixel,
+borderBottomWidth:_utils2.default.pixel,
+backgroundColor:"#f7f7f7",
+height:110},
+
+orderStatus:{
+flex:1,
+height:30,
+paddingTop:6,
+paddingLeft:15,
+paddingBottom:5},
+
+orderInfo:{
+backgroundColor:"#f7f7f7",
+height:80,
+paddingTop:10,
+paddingLeft:15,
+paddingRight:15,
+paddingBottom:10,
+shadowColor:"#777",
+shadowOpacity:0.1,
+shadowRadius:2,
+shadowOffset:{
+height:-2,
+width:0}},
+
+
+detialSubtitle:{
+borderLeftWidth:2,
+paddingLeft:10,
+paddingTop:2,
+paddingBottom:2,
+marginBottom:20,
+justifyContent:'center',
+marginTop:20},
+
+btn_ac:{
+marginTop:13,
+marginBottom:10,
+width:280,
+height:40,
+borderRadius:2,
+justifyContent:'center',
+alignItems:'center'},
+
+detailList:{
+height:_utils2.default.size.height-370,
+paddingLeft:20,paddingRight:20},
+
+detailListEm:{
+fontWeight:"500",
+color:"#333",
+paddingRight:10},
+
+detailListReg:{
+color:"#555",
+paddingBottom:5}});
+}, "DNAapp/view/checkProfile.js");
+__d(781 /* DNAapp/view/verifyFace.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
+var _reactNativeQrcode=require(761 /* react-native-qrcode */);var _reactNativeQrcode2=babelHelpers.interopRequireDefault(_reactNativeQrcode);
+var _reactNative=require(43 /* react-native */);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _utils=require(630 /* ./utils */);var _utils2=babelHelpers.interopRequireDefault(_utils);
+var _FontAwesome=require(631 /* react-native-vector-icons/FontAwesome */);var _FontAwesome2=babelHelpers.interopRequireDefault(_FontAwesome);
+var _reactNativeActivityView=require(750 /* react-native-activity-view */);var _reactNativeActivityView2=babelHelpers.interopRequireDefault(_reactNativeActivityView);
+var _reactNativeImagePicker=require(751 /* react-native-image-picker */);var _reactNativeImagePicker2=babelHelpers.interopRequireDefault(_reactNativeImagePicker);
+var _reactNativeBlur=require(752 /* react-native-blur */);
+var _reactNativeForm=require(745 /* react-native-form */);var _reactNativeForm2=babelHelpers.interopRequireDefault(_reactNativeForm);
+var _checkProfile=require(780 /* ./checkProfile */);var _checkProfile2=babelHelpers.interopRequireDefault(_checkProfile);
+
+
+var _config=require(747 /* ../config */);var _class=function(_Component){babelHelpers.inherits(_class,_Component);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _class(props){babelHelpers.classCallCheck(this,_class);var _this=babelHelpers.possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).call(this,
+props));_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_showSpiner=function(showSpiner){
+_this.setState({
+showSpiner:showSpiner});
+
+};_this.showSpiner=_this._showSpiner.bind(_this);_this.state={isValid:_this.props.isValid,onFaceSignup:_this.props.onFaceSignup,showSpiner:false,idFront1Source:{uri:'idfront1'},idFront1SourceData:"",idFront2Source:{uri:'idfront2'},idFront2SourceData:"",idFront3Source:{uri:'idfront3'},idFront3SourceData:"",idFront4Source:{uri:'idfront4'},idFront4SourceData:""};return _this;}babelHelpers.createClass(_class,[{key:'componentDidMount',value:function componentDidMount(){}},{key:'_submitVerify',value:function _submitVerify()
+
+{
+if(this._saveChangesVerify()){
+
+this._loginSuccess();
+}
+}},{key:'_submitSignup',value:function _submitSignup()
+
+{
+if(this._saveChangesSignup()){
+
+this._loginSuccess();
+}
+}},{key:'_loginSuccess',value:function _loginSuccess()
+
+{
+this.props.navigator.push({
+title:"DNA档案列表",
+component:_checkProfile2.default,
+navigationBarHidden:false,
+passProps:{uid:this.props.uid}});
+
+}},{key:'_saveChangesVerify',value:function _saveChangesVerify()
+
+{var _this2=this;
+
+
+
+var valid=true;
+
+
+
+
+
+if(!this.state.idFrontSourceData){
+valid=false;
+}
+
+if(valid){
+this._showSpiner(true);
+_utils2.default.post(_config.url+'/check_face/',{
+
+uid:this.props.uid,
+id_face:this.state.idFrontSourceData},
+function(resData){
+_this2._showSpiner(false);
+if(resData){
+if(resData.error!=="true"){
+if(resData.valid==="false"){
+_reactNative.AlertIOS.alert('提交失败',"对不起 您太帅了系统识别不出来");
+return false;
+}else{
+_reactNative.AlertIOS.alert('提交成功',"人脸识别通过 欢迎回来");
+
+_this2._loginSuccess();
+return true;
+}
+}else{
+_reactNative.AlertIOS.alert('提交失败',"识别程序出错／没有找到人脸");
+}
+}else{
+_reactNative.AlertIOS.alert('服务器无响应','请稍后再试');
+return false;
+}
+
+});
+}else{
+_reactNative.AlertIOS.alert('提交失败','请拍摄您的正面照');
+}
+}},{key:'_saveChangesSignup',value:function _saveChangesSignup()
+
+{var _this3=this;
+
+
+
+var valid=true;
+
+
+
+
+
+if(!this.state.idFront1SourceData||!this.state.idFront2SourceData||!this.state.idFront3SourceData||!this.state.idFront4SourceData){
+valid=false;
+}
+
+if(valid){
+
+_utils2.default.post(_config.url+'/upload_face/',{
+uid:this.props.uid,
+
+id_face_1:this.state.idFront1SourceData,
+id_face_2:this.state.idFront2SourceData,
+id_face_3:this.state.idFront3SourceData,
+id_face_4:this.state.idFront4SourceData},
+function(resData){
+
+
+if(resData.error!=="true"){
+if(resData.message==="0"){
+_reactNative.AlertIOS.alert('提交失败',"请检查你所填的资料");
+return false;
+}else{
+_reactNative.AlertIOS.alert('提交成功',"请等待审核");
+
+_this3._loginSuccess();
+return true;
+}
+}else{
+_reactNative.AlertIOS.alert('服务器无响应','请稍后再试');
+return false;
+}
+});
+}else{
+_reactNative.AlertIOS.alert('提交失败','需要拍摄／上传四张照片');
+}
+}},{key:'_uploadFace',value:function _uploadFace()
+
+{var _this4=this;
+var options={
+title:'选择正面照',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+console.log('Response = ',response);
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this4.setState({
+idFrontSource:source,
+idFrontSourceData:sourceData});
+
+console.log(_this4.state.idFrontSource);
+}
+});
+}},{key:'_uploadFace1',value:function _uploadFace1()
+
+{var _this5=this;
+var options={
+title:'选择正面照',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+console.log('Response = ',response);
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this5.setState({
+idFront1Source:source,
+idFront1SourceData:sourceData});
+
+console.log(_this5.state.idFront1Source);
+}
+});
+}},{key:'_uploadFace2',value:function _uploadFace2()
+
+{var _this6=this;
+var options={
+title:'选择正面照(偏右)',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this6.setState({
+idFront2Source:source,
+idFront2SourceData:sourceData});
+
+console.log(_this6.state.idFront2Source);
+}
+});
+}},{key:'_uploadFace3',value:function _uploadFace3()
+
+{var _this7=this;
+var options={
+title:'选择正面照(偏左)',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this7.setState({
+idFront3Source:source,
+idFront3SourceData:sourceData});
+
+console.log(_this7.state.idFront3Source);
+}
+});
+}},{key:'_uploadFace4',value:function _uploadFace4()
+
+{var _this8=this;
+var options={
+title:'选择正面照（偏下）',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this8.setState({
+idFront4Source:source,
+idFront4SourceData:sourceData});
+
+console.log(_this8.state.idFront4Source);
+}
+});
+}},{key:'render',value:function render()
+
+{var _this9=this;
+var content=void 0;
+
+
+
+
+
+
+if(true){
+if(true){
+content=_react2.default.createElement(_reactNative.View,{style:[styles.orderButtonContainer,{paddingBottom:30}]},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照')),
+
+_react2.default.createElement(_reactNative.View,{style:{lexDirection:"row"}},
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFrontSource,style:[styles.uploadFaceSingle,{margin:30}]})),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#48aeb4',style:[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}],onPress:function onPress(){return _this9._submitVerify();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff'}},'提交')),
+
+this.state.showSpiner?
+_react2.default.createElement(_reactNative.View,{style:styles.showSpiner},
+_react2.default.createElement(_reactNative.ActivityIndicatorIOS,{color:'#000000'})):
+
+_react2.default.createElement(_reactNative.View,null));
+
+
+}else{
+content=_react2.default.createElement(_reactNative.View,{style:[styles.orderButtonContainer,{paddingBottom:30}]},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace1();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－1')),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace2();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－2')),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace3();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－3')),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace4();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－4')),
+
+_react2.default.createElement(_reactNative.View,{style:{flex:1,flexDirection:"row"}},
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront1Source,style:[styles.uploadFace,{marginRight:30}]}),
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront2Source,style:styles.uploadFace})),
+
+_react2.default.createElement(_reactNative.View,{style:{flex:1,flexDirection:"row"}},
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront3Source,style:[styles.uploadFace,{marginRight:30}]}),
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront4Source,style:styles.uploadFace})),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#48aeb4',style:[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}],onPress:function onPress(){return _this9._submitSignup();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff'}},'提交')));
+
+
+}
+}else{
+content=_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}}));
+
+}
+
+
+return(
+_react2.default.createElement(_reactNative.ScrollView,{style:styles.profileListContainer},
+content));
+
+
+}}]);return _class;}(_react.Component);_class.propTypes={uid:_react2.default.PropTypes.string.isRequired,showSpiner:_react2.default.PropTypes.func.isRequired,onFaceSignup:_react2.default.PropTypes.bool.isRequired,data:_react2.default.PropTypes.object.isRequired};exports.default=_class;
+
+
+
+var styles=_reactNative.StyleSheet.create({
+profileListContainer:{
+position:"relative",
+top:40},
+
+icon:{
+position:'absolute',
+right:10,
+top:9,
+color:'#999',
+backgroundColor:"transparent"},
+
+inputRow:{
+flexDirection:'row',
+alignItems:'center',
+justifyContent:'center',
+marginBottom:20},
+
+input:{
+
+
+width:_utils2.default.size.width-80,
+borderWidth:_utils2.default.pixel,
+height:40,
+paddingLeft:12,
+borderColor:'#eee',
+borderRadius:1,
+color:"#333",
+backgroundColor:"rgba(255, 255, 255, 0.75)"},
+
+container:{
+flex:1},
+
+itemWrapper:{
+backgroundColor:'#eaeaea'},
+
+userContainer:{
+position:"relative",
+top:0},
+
+userMenuContainer:{
+height:45,
+borderTopWidth:_utils2.default.pixel,
+borderTopColor:"#bbb",
+borderBottomWidth:_utils2.default.pixel,
+borderBottomColor:"#bbb",
+backgroundColor:"#f7f7f7",
+flex:1,
+marginBottom:20},
+
+userMenu:{
+paddingLeft:50,
+height:45,
+justifyContent:'center'},
+
+
+itemNavIcon:{
+position:"absolute",
+top:13,
+left:20,
+color:"#454545",
+backgroundColor:"transparent"},
+
+itemNavMenu:{
+position:"absolute",
+top:12,
+right:10,
+color:"#bbb",
+backgroundColor:"transparent"},
+
+orderContainer:{
+alignItems:'center',
+flex:1,
+width:_utils2.default.size.width-40,
+marginLeft:20,marginTop:10},
+
+orderInputContainer:{
+marginTop:20},
+
+orderInputText:{
+fontSize:12},
+
+orderInput:{
+marginTop:10,
+paddingLeft:10,
+paddingRight:10,
+paddingTop:5,
+paddingBottom:5,
+width:_utils2.default.size.width-80,
+borderWidth:_utils2.default.pixel,
+height:40,
+borderColor:'#777',
+borderRadius:2,
+color:"#333"},
+
+orderButtonContainer:{
+marginTop:0,
+width:_utils2.default.size.width-40,
+marginLeft:20,
+alignItems:"center"},
+
+uploadFace:{
+height:100,
+width:100,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+uploadFaceSingle:{
+height:0.5*_utils2.default.size.width,
+width:0.5*_utils2.default.size.width,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+uploadId:{
+height:100,
+width:100,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+btnText:{
+color:"#4285f4",
+fontSize:16,
+paddingTop:10},
+
+btn_pm:{
+marginTop:13,
+width:0.8*_utils2.default.size.width,
+height:40,
+borderRadius:2,
+backgroundColor:'#1E868C',
+justifyContent:'center',
+alignItems:'center'},
+
+btn_cm:{
+marginTop:13,
+width:0.8*_utils2.default.size.width,
+height:40,
+borderRadius:2,
+backgroundColor:'#BEBEBE',
+justifyContent:'center',
+alignItems:'center'},
+
+btn_if:{
+marginTop:10,
+width:_utils2.default.size.width-80,
+height:40,
+borderRadius:2,
+justifyContent:'center',
+alignItems:'center'},
+
+section:{
+backgroundColor:"#f3f3f3",
+paddingLeft:15,
+paddingTop:7,
+paddingBottom:7,
+borderBottomColor:"#ddd",
+borderBottomWidth:_utils2.default.pixel},
+
+sectionText:{},
+
+
+incomeRow:{
+backgroundColor:"#fff",
+height:60,
+borderBottomColor:"#ddd",
+borderBottomWidth:_utils2.default.pixel,
+flexDirection:"row",
+paddingLeft:15,
+paddingRight:15,
+justifyContent:"center"},
+
+incomeRowActive:{
+opacity:1},
+
+incomeRowNotActive:{
+opacity:0.45},
+
+incomeRowText:{
+flex:1,
+justifyContent:"center"},
+
+incomeRowIcon:{
+flex:1,
+justifyContent:"center"},
+
+incomeRowOrder:{
+flex:3,
+justifyContent:"center"},
+
+userSettingContainer:{
+marginTop:100,
+marginLeft:30},
+
+showSpiner:{
+position:"absolute",
+height:_utils2.default.size.height,
+width:_utils2.default.size.width+40,
+alignItems:"center",
+justifyContent:"center",
+top:-40,
+left:-40,
+backgroundColor:"rgba(0,0,0,0.2)"}});
+}, "DNAapp/view/verifyFace.js");
+__d(782 /* DNAapp/view/signupFace.js */, function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+var _react=require(12 /* react */);var _react2=babelHelpers.interopRequireDefault(_react);
+var _reactNativeQrcode=require(761 /* react-native-qrcode */);var _reactNativeQrcode2=babelHelpers.interopRequireDefault(_reactNativeQrcode);
+var _reactNative=require(43 /* react-native */);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _utils=require(630 /* ./utils */);var _utils2=babelHelpers.interopRequireDefault(_utils);
+var _FontAwesome=require(631 /* react-native-vector-icons/FontAwesome */);var _FontAwesome2=babelHelpers.interopRequireDefault(_FontAwesome);
+var _reactNativeActivityView=require(750 /* react-native-activity-view */);var _reactNativeActivityView2=babelHelpers.interopRequireDefault(_reactNativeActivityView);
+var _reactNativeImagePicker=require(751 /* react-native-image-picker */);var _reactNativeImagePicker2=babelHelpers.interopRequireDefault(_reactNativeImagePicker);
+var _reactNativeBlur=require(752 /* react-native-blur */);
+var _reactNativeForm=require(745 /* react-native-form */);var _reactNativeForm2=babelHelpers.interopRequireDefault(_reactNativeForm);
+var _checkProfile=require(780 /* ./checkProfile */);var _checkProfile2=babelHelpers.interopRequireDefault(_checkProfile);
+
+
+var _config=require(747 /* ../config */);var _class=function(_Component){babelHelpers.inherits(_class,_Component);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _class(props){babelHelpers.classCallCheck(this,_class);var _this=babelHelpers.possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).call(this,
+props));
+
+
+_this.state={
+isValid:_this.props.isValid,
+onFaceSignup:_this.props.onFaceSignup,
+idFront1Source:{uri:'idfront1'},
+idFront1SourceData:"",
+idFront2Source:{uri:'idfront2'},
+idFront2SourceData:"",
+idFront3Source:{uri:'idfront3'},
+idFront3SourceData:"",
+idFront4Source:{uri:'idfront4'},
+idFront4SourceData:""};return _this;
+
+}babelHelpers.createClass(_class,[{key:'componentDidMount',value:function componentDidMount()
+
+{
+
+}},{key:'_submitVerify',value:function _submitVerify()
+
+{
+if(this._saveChangesVerify()){
+
+this._loginSuccess();
+}
+}},{key:'_submitSignup',value:function _submitSignup()
+
+{
+if(this._saveChangesSignup()){
+
+this._loginSuccess();
+}
+}},{key:'_loginSuccess',value:function _loginSuccess()
+
+{
+this.props.navigator.push({
+title:"DNA档案列表",
+component:_checkProfile2.default,
+navigationBarHidden:false,
+passProps:{uid:this.props.uid}});
+
+}},{key:'_saveChangesVerify',value:function _saveChangesVerify()
+
+{var _this2=this;
+
+
+
+var valid=true;
+
+
+
+
+
+if(!this.state.idFrontSourceData){
+valid=false;
+}
+
+if(valid){
+
+_utils2.default.post(_config.url+'/check_face/',{
+
+uid:this.props.uid,
+id_face:this.state.idFrontSourceData},
+function(resData){
+
+
+if(resData.error!=="true"){
+if(resData.valid==="false"){
+_reactNative.AlertIOS.alert('提交失败',"对不起 您太帅了系统识别不出来");
+return false;
+}else{
+_reactNative.AlertIOS.alert('提交成功',"人脸识别通过 欢迎回来");
+
+_this2._loginSuccess();
+return true;
+}
+}else{
+_reactNative.AlertIOS.alert('服务器无响应','请稍后再试');
+return false;
+}
+});
+}else{
+_reactNative.AlertIOS.alert('提交失败','请拍摄您的正面照');
+}
+}},{key:'_saveChangesSignup',value:function _saveChangesSignup()
+
+{var _this3=this;
+
+
+
+var valid=true;
+
+
+
+
+
+if(!this.state.idFront1SourceData||!this.state.idFront2SourceData||!this.state.idFront3SourceData||!this.state.idFront4SourceData){
+valid=false;
+}
+
+if(valid){
+
+_utils2.default.post(_config.url+'/upload_face/',{
+uid:this.props.uid,
+
+id_face_1:this.state.idFront1SourceData,
+id_face_2:this.state.idFront2SourceData,
+id_face_3:this.state.idFront3SourceData,
+id_face_4:this.state.idFront4SourceData},
+function(resData){
+
+
+if(resData.error!=="true"){
+if(resData.message==="0"){
+_reactNative.AlertIOS.alert('提交失败',"请检查你所填的资料");
+return false;
+}else{
+_reactNative.AlertIOS.alert('提交成功',"请等待审核");
+
+_this3._loginSuccess();
+return true;
+}
+}else{
+_reactNative.AlertIOS.alert('服务器无响应','请稍后再试');
+return false;
+}
+});
+}else{
+_reactNative.AlertIOS.alert('提交失败','需要拍摄／上传四张照片');
+}
+}},{key:'_uploadFace',value:function _uploadFace()
+
+{var _this4=this;
+var options={
+title:'选择正面照',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+console.log('Response = ',response);
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this4.setState({
+idFrontSource:source,
+idFrontSourceData:sourceData});
+
+console.log(_this4.state.idFrontSource);
+}
+});
+}},{key:'_uploadFace1',value:function _uploadFace1()
+
+{var _this5=this;
+var options={
+title:'选择正面照',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+console.log('Response = ',response);
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this5.setState({
+idFront1Source:source,
+idFront1SourceData:sourceData});
+
+console.log(_this5.state.idFront1Source);
+}
+});
+}},{key:'_uploadFace2',value:function _uploadFace2()
+
+{var _this6=this;
+var options={
+title:'选择正面照(偏右)',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this6.setState({
+idFront2Source:source,
+idFront2SourceData:sourceData});
+
+console.log(_this6.state.idFront2Source);
+}
+});
+}},{key:'_uploadFace3',value:function _uploadFace3()
+
+{var _this7=this;
+var options={
+title:'选择正面照(偏左)',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this7.setState({
+idFront3Source:source,
+idFront3SourceData:sourceData});
+
+console.log(_this7.state.idFront3Source);
+}
+});
+}},{key:'_uploadFace4',value:function _uploadFace4()
+
+{var _this8=this;
+var options={
+title:'选择正面照（偏下）',
+cancelButtonTitle:'取消',
+takePhotoButtonTitle:'拍照',
+chooseFromLibraryButtonTitle:'从手机相册选取',
+cameraType:'front',
+mediaType:'photo',
+allowsEditing:false,
+noData:false,
+storageOptions:{
+skipBackup:true,
+path:'images'}};
+
+
+_reactNativeImagePicker2.default.showImagePicker(options,function(response){
+if(response.didCancel){
+console.log('User cancelled image picker');
+}else
+if(response.error){
+console.log('ImagePickerManager Error: ',response.error);
+}else
+if(response.customButton){
+console.log('User tapped custom button: ',response.customButton);
+}else
+{
+var source={uri:response.uri.replace('file://',''),isStatic:true};
+var sourceData='data:image/jpeg;base64,'+response.data;
+_this8.setState({
+idFront4Source:source,
+idFront4SourceData:sourceData});
+
+console.log(_this8.state.idFront4Source);
+}
+});
+}},{key:'render',value:function render()
+
+{var _this9=this;
+var content=void 0;
+
+
+
+
+
+
+if(true){
+if(false){
+content=_react2.default.createElement(_reactNative.View,{style:[styles.orderButtonContainer,{paddingBottom:30}]},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照')),
+
+_react2.default.createElement(_reactNative.View,{style:{flex:1,flexDirection:"row"}},
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFrontSource,style:[styles.uploadFace,{margin:30}]})),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#48aeb4',style:[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}],onPress:function onPress(){return _this9._submitSignup();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff'}},'提交')));
+
+
+}else{
+content=_react2.default.createElement(_reactNative.View,{style:[styles.orderButtonContainer,{paddingBottom:30}]},
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace1();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－1')),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace2();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－2')),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace3();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－3')),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#eee',style:[styles.btn_if,{backgroundColor:'#ddd'}],onPress:function onPress(){return _this9._uploadFace4();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}},'上传正面照－4')),
+
+_react2.default.createElement(_reactNative.View,{style:{flex:1,flexDirection:"row"}},
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront1Source,style:[styles.uploadFace,{marginRight:30}]}),
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront2Source,style:styles.uploadFace})),
+
+_react2.default.createElement(_reactNative.View,{style:{flex:1,flexDirection:"row"}},
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront3Source,style:[styles.uploadFace,{marginRight:30}]}),
+_react2.default.createElement(_reactNative.Image,{source:this.state.idFront4Source,style:styles.uploadFace})),
+
+_react2.default.createElement(_reactNative.TouchableHighlight,{underlayColor:'#48aeb4',style:[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}],onPress:function onPress(){return _this9._submitSignup();}},
+_react2.default.createElement(_reactNative.Text,{style:{color:'#fff'}},'提交')));
+
+
+}
+}else{
+content=_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.Text,{style:{color:'#555'}}));
+
+}
+
+
+return(
+_react2.default.createElement(_reactNative.ScrollView,{style:styles.profileListContainer},
+content));
+
+
+}}]);return _class;}(_react.Component);_class.propTypes={uid:_react2.default.PropTypes.string.isRequired,onFaceSignup:_react2.default.PropTypes.bool.isRequired,data:_react2.default.PropTypes.object.isRequired};exports.default=_class;
+
+
+
+var styles=_reactNative.StyleSheet.create({
+profileListContainer:{
+position:"relative",
+top:40},
+
+icon:{
+position:'absolute',
+right:10,
+top:9,
+color:'#999',
+backgroundColor:"transparent"},
+
+inputRow:{
+flexDirection:'row',
+alignItems:'center',
+justifyContent:'center',
+marginBottom:20},
+
+input:{
+
+
+width:_utils2.default.size.width-80,
+borderWidth:_utils2.default.pixel,
+height:40,
+paddingLeft:12,
+borderColor:'#eee',
+borderRadius:1,
+color:"#333",
+backgroundColor:"rgba(255, 255, 255, 0.75)"},
+
+container:{
+flex:1},
+
+itemWrapper:{
+backgroundColor:'#eaeaea'},
+
+userContainer:{
+position:"relative",
+top:0},
+
+userMenuContainer:{
+height:45,
+borderTopWidth:_utils2.default.pixel,
+borderTopColor:"#bbb",
+borderBottomWidth:_utils2.default.pixel,
+borderBottomColor:"#bbb",
+backgroundColor:"#f7f7f7",
+flex:1,
+marginBottom:20},
+
+userMenu:{
+paddingLeft:50,
+height:45,
+justifyContent:'center'},
+
+
+itemNavIcon:{
+position:"absolute",
+top:13,
+left:20,
+color:"#454545",
+backgroundColor:"transparent"},
+
+itemNavMenu:{
+position:"absolute",
+top:12,
+right:10,
+color:"#bbb",
+backgroundColor:"transparent"},
+
+orderContainer:{
+alignItems:'center',
+flex:1,
+width:_utils2.default.size.width-40,
+marginLeft:20,marginTop:10},
+
+orderInputContainer:{
+marginTop:20},
+
+orderInputText:{
+fontSize:12},
+
+orderInput:{
+marginTop:10,
+paddingLeft:10,
+paddingRight:10,
+paddingTop:5,
+paddingBottom:5,
+width:_utils2.default.size.width-80,
+borderWidth:_utils2.default.pixel,
+height:40,
+borderColor:'#777',
+borderRadius:2,
+color:"#333"},
+
+orderButtonContainer:{
+marginTop:0,
+width:_utils2.default.size.width-40,
+marginLeft:20,
+alignItems:"center"},
+
+uploadFace:{
+height:100,
+width:100,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+uploadId:{
+height:100,
+width:100,
+marginTop:20,
+flex:1,
+borderWidth:1,
+borderColor:"#aaa"},
+
+btnText:{
+color:"#4285f4",
+fontSize:16,
+paddingTop:10},
+
+btn_pm:{
+marginTop:13,
+width:0.8*_utils2.default.size.width,
+height:40,
+borderRadius:2,
+backgroundColor:'#1E868C',
+justifyContent:'center',
+alignItems:'center'},
+
+btn_cm:{
+marginTop:13,
+width:0.8*_utils2.default.size.width,
+height:40,
+borderRadius:2,
+backgroundColor:'#BEBEBE',
+justifyContent:'center',
+alignItems:'center'},
+
+btn_if:{
+marginTop:10,
+width:_utils2.default.size.width-80,
+height:40,
+borderRadius:2,
+justifyContent:'center',
+alignItems:'center'},
+
+section:{
+backgroundColor:"#f3f3f3",
+paddingLeft:15,
+paddingTop:7,
+paddingBottom:7,
+borderBottomColor:"#ddd",
+borderBottomWidth:_utils2.default.pixel},
+
+sectionText:{},
+
+
+incomeRow:{
+backgroundColor:"#fff",
+height:60,
+borderBottomColor:"#ddd",
+borderBottomWidth:_utils2.default.pixel,
+flexDirection:"row",
+paddingLeft:15,
+paddingRight:15,
+justifyContent:"center"},
+
+incomeRowActive:{
+opacity:1},
+
+incomeRowNotActive:{
+opacity:0.45},
+
+incomeRowText:{
+flex:1,
+justifyContent:"center"},
+
+incomeRowIcon:{
+flex:1,
+justifyContent:"center"},
+
+incomeRowOrder:{
+flex:3,
+justifyContent:"center"},
+
+userSettingContainer:{
+marginTop:100,
+marginLeft:30}});
+}, "DNAapp/view/signupFace.js");
+__d(783 /* DNAapp/view/img/DNA1.png */, function(global, require, module, exports) {module.exports = require(161 /* react-native/Libraries/Image/AssetRegistry */).registerAsset({"__packager_asset":true,"fileSystemLocation":"/Users/chalene/Workshop/FGIApp副本/view/img","httpServerLocation":"/assets/view/img","width":903,"height":901,"scales":[1],"files":["/Users/chalene/Workshop/FGIApp副本/view/img/DNA1.png"],"hash":"d3b06e9ff3fb0e9472d59947dd07fda7","name":"DNA1","type":"png"});
 }, "DNAapp/view/img/DNA1.png");
 ;require(187);
 ;require(0);
