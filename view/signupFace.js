@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import QRCode from 'react-native-qrcode';
 import { 
+  ActivityIndicatorIOS,
   AsyncStorage,
   AlertIOS,
   NavigatorIOS,
@@ -49,17 +50,19 @@ export default class extends Component{
     //isValid: React.PropTypes.bool.isRequired,
     //onFaceSignup: React.PropTypes.bool.isRequired,
     //callbackLogin: React.PropTypes.func.isRequired,
+    showSpiner: React.PropTypes.func.isRequired,
     onFaceSignup: React.PropTypes.bool.isRequired,
     data: React.PropTypes.object.isRequired,
   };
 
   constructor(props) {
     super(props);
-    //this.loginSuccess = this._loginSuccess.bind(this);
+    this.showSpiner = this._showSpiner.bind(this);
 
     this.state = {
       isValid: this.props.isValid,
       onFaceSignup: this.props.onFaceSignup,
+      showSpiner:false,
       idFront1Source: {uri:'idfront1'},
       idFront1SourceData: "",
       idFront2Source: {uri:'idfront2'},
@@ -74,6 +77,12 @@ export default class extends Component{
   componentDidMount() {
     //StatusBarIOS.setStyle(1);
   }
+
+  _showSpiner = (showSpiner) => {
+    this.setState({
+      showSpiner,
+    })
+  };
 
   _submitVerify() {
     if(this._saveChangesVerify()){
@@ -113,13 +122,13 @@ export default class extends Component{
     }
 
     if (valid) {
-      //this.props.showSpiner(true);
+      this._showSpiner(true);
       Util.post(`${url}/check_face/`,{
          // images are sent as jpeg base64
          uid:this.props.uid,
          id_face: this.state.idFrontSourceData,
       }, (resData) => {
-          //this.props.showSpiner(false);
+          this._showSpiner(false);
 
           if (resData.error !== "true") {
             if (resData.valid === "false") {
@@ -156,7 +165,8 @@ export default class extends Component{
     }
 
     if (valid) {
-      //this.props.showSpiner(true);
+      this._showSpiner(true);
+
       Util.post(`${url}/upload_face/`,{
         uid:this.props.uid,
         // images are sent as jpeg base64
@@ -165,7 +175,8 @@ export default class extends Component{
         id_face_3: this.state.idFront3SourceData,
         id_face_4: this.state.idFront4SourceData,
       }, (resData) => {
-          //this.props.showSpiner(false);
+          this._showSpiner(false);
+
 
           if (resData.error !== "true") {
             if (resData.message === "0") {
@@ -420,7 +431,13 @@ export default class extends Component{
             <TouchableHighlight underlayColor="#48aeb4" style={[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}]} onPress={() => this._submitSignup()}>
               <Text style={{color:'#fff'}}>提交</Text>
             </TouchableHighlight>
-          </View>;
+            {this.state.showSpiner?
+                <View style={styles.showSpiner}>
+                  <ActivityIndicatorIOS color="#000000" />
+                </View>:
+                <View></View>
+              }
+          </View>
         }
       } else {
         content = <View>
@@ -628,5 +645,15 @@ const styles = StyleSheet.create({
   userSettingContainer:{
     marginTop: 100, 
     marginLeft:30,
+  },
+  showSpiner:{
+    position:"absolute",
+    height: Util.size.height,
+    width:Util.size.width+40,
+    alignItems:"center",
+    justifyContent:"center",
+    top:-40,
+    left:-40,
+    backgroundColor:"rgba(0,0,0,0.2)"
   },
 })
