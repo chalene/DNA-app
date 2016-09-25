@@ -131,16 +131,16 @@ export default class extends Component{
         if (resData) {
           if (resData.error !== "true") {
             if (resData.valid === "false") {
-              AlertIOS.alert('提交失败', "对不起 您太帅了系统识别不出来");
+              AlertIOS.alert('验证失败', "对不起 您太帅了系统识别不出来");
               return false
             } else {
-              AlertIOS.alert('提交成功', "人脸识别通过 欢迎回来");
+              AlertIOS.alert('验证成功', "人脸识别通过 欢迎回来");
               //this.props.navigator.pop();
               this._loginSuccess()
               return true
             }
           } else {
-            AlertIOS.alert('提交失败', "识别程序出错／没有找到人脸");
+            AlertIOS.alert('提交失败', "识别程序出错／没有找到人脸"+"valid:"+resData.valid+" error:"+resData.error);
           }
         } else {
           AlertIOS.alert('服务器无响应', '请稍后再试');
