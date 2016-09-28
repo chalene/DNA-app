@@ -194,7 +194,7 @@ export default class extends Component{
           }
       })
     }else{
-      AlertIOS.alert('提交失败', '需要拍摄／上传四张照片');
+      AlertIOS.alert('提交失败', '需要拍摄四张照片');
     }
   }
 
@@ -203,7 +203,7 @@ export default class extends Component{
       title: '选择正面照', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
+      chooseFromLibraryButtonTitle:null,// '从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
@@ -241,7 +241,7 @@ export default class extends Component{
       title: '选择正面照', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
+      chooseFromLibraryButtonTitle: null,//'从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
@@ -279,7 +279,7 @@ export default class extends Component{
       title: '选择正面照(偏右)', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
+      chooseFromLibraryButtonTitle: null,// '从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
@@ -316,7 +316,7 @@ export default class extends Component{
       title: '选择正面照(偏左)', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
+      chooseFromLibraryButtonTitle: null,//'从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
@@ -353,7 +353,7 @@ export default class extends Component{
       title: '选择正面照（偏下）', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
+      chooseFromLibraryButtonTitle:null,// '从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
@@ -397,7 +397,7 @@ export default class extends Component{
       if (false) {
           content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
               <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace()}>
-              <Text style={{color:'#555'}}>上传正面照</Text>
+              <Text style={{color:'#555'}}>拍摄正面照</Text>
             </TouchableHighlight>
             <View style={{flex:1,flexDirection:"row"}}>
               <Image source={this.state.idFrontSource} style={[styles.uploadFace,{margin:30}]} />
@@ -409,16 +409,16 @@ export default class extends Component{
         } else {
           content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace1()}>
-              <Text style={{color:'#555'}}>上传正面照－1</Text>
+              <Text style={{color:'#555'}}>拍摄正面照－1</Text>
             </TouchableHighlight>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace2()}>
-              <Text style={{color:'#555'}}>上传正面照－2</Text>
+              <Text style={{color:'#555'}}>拍摄正面照－2</Text>
             </TouchableHighlight>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace3()}>
-              <Text style={{color:'#555'}}>上传正面照－3</Text>
+              <Text style={{color:'#555'}}>拍摄正面照－3</Text>
             </TouchableHighlight>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace4()}>
-              <Text style={{color:'#555'}}>上传正面照－4</Text>
+              <Text style={{color:'#555'}}>拍摄正面照－4</Text>
             </TouchableHighlight>
             <View style={{flex:1,flexDirection:"row"}}>
               <Image source={this.state.idFront1Source} style={[styles.uploadFace,{marginRight:30}]} />

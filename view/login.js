@@ -69,13 +69,13 @@ class Login extends Component{
           if (resData.error !== "false") {
             switch(resData.loginState){   
               case "0":
-                AlertIOS.alert('登陆失败', '审核未完成');     
+                AlertIOS.alert('登陆失败', '用户名或密码不匹配');     
                 break;                                                         
               case "2": 
                 AlertIOS.alert('登陆失败', '用户名不存在');
-                break;
-              case "3":
-                AlertIOS.alert('登陆失败', '用户名或密码不匹配');
+              //   break;
+              // case "3":
+              //   AlertIOS.alert('登陆失败', '用户名或密码不匹配');
             }
           } else {
             AsyncStorage.setItem('loginState',"1").done();
