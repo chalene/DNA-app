@@ -84,13 +84,6 @@ export default class extends Component{
     })
   };
 
-  _submitVerify() {
-    if(this._saveChangesVerify()){
-      //this.closeModal()
-      this._loginSuccess()
-    }
-  }
-
   _submitSignup() {
     if(this._saveChangesSignup()){
       //this.closeModal()
@@ -105,49 +98,6 @@ export default class extends Component{
               navigationBarHidden: false,
               passProps:{ uid: this.props.uid},
             }); 
-  }
-
-  _saveChangesVerify() {
-    // return true
-    // SSH post: this.refs.form.getValues()
-    // const info = this.refs.form.getValues();
-    let valid = true;
-    // for (var key in info) {
-    //   if (info[key]==="") {
-    //     valid = false;
-    //   }
-    // }
-    if (!this.state.idFrontSourceData) {
-      valid = false;
-    }
-
-    if (valid) {
-      this._showSpiner(true);
-      Util.post(`${url}/check_face/`,{
-         // images are sent as jpeg base64
-         uid:this.props.uid,
-         id_face: this.state.idFrontSourceData,
-      }, (resData) => {
-          this._showSpiner(false);
-
-          if (resData.error !== "true") {
-            if (resData.valid === "false") {
-              AlertIOS.alert('提交失败', "对不起 您太帅了系统识别不出来");
-              return false
-            } else {
-              AlertIOS.alert('提交成功', "人脸识别通过 欢迎回来");
-              //this.props.navigator.pop();
-              this._loginSuccess()
-              return true
-            }
-          } else {
-            AlertIOS.alert('服务器无响应', '请稍后再试');
-            return false
-          }
-      })
-    }else{
-      AlertIOS.alert('提交失败', '请拍摄您的正面照');
-    }
   }
 
   _saveChangesSignup() {
@@ -198,44 +148,6 @@ export default class extends Component{
     }
   }
 
-  _uploadFace() {
-    const options = {
-      title: '选择正面照', 
-      cancelButtonTitle: '取消',
-      takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle:null,// '从手机相册选取', 
-      cameraType: 'front', 
-      mediaType: 'photo', 
-      allowsEditing: false,
-      noData: false, 
-      storageOptions: { 
-        skipBackup: true, 
-        path: 'images'
-      }
-    };
-    ImagePickerManager.showImagePicker(options, (response) => {
-      console.log('Response = ', response);
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error) {
-        console.log('ImagePickerManager Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else {
-        const source = {uri: response.uri.replace('file://', ''), isStatic: true};
-        const sourceData = 'data:image/jpeg;base64,' + response.data;
-        this.setState({
-          idFrontSource: source,
-          idFrontSourceData: sourceData
-        });
-        console.log(this.state.idFrontSource)
-      }
-    });
-  }
-
   _uploadFace1() {
     const options = {
       title: '选择正面照', 
@@ -246,6 +158,8 @@ export default class extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
+      quality:0.2,
+      maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -279,11 +193,13 @@ export default class extends Component{
       title: '选择正面照(偏右)', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: null,// '从手机相册选取', 
+      chooseFromLibraryButtonTitle: null,//'从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
+      quality:0.2,
+      maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -321,6 +237,8 @@ export default class extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
+      quality:0.2,
+      maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -353,11 +271,13 @@ export default class extends Component{
       title: '选择正面照（偏下）', 
       cancelButtonTitle: '取消',
       takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle:null,// '从手机相册选取', 
+      chooseFromLibraryButtonTitle: null,//'从手机相册选取', 
       cameraType: 'front', 
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
+      quality:0.2,
+      maxWidth:322,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -387,27 +307,8 @@ export default class extends Component{
   
   render() {
     let content;
-    // Util.post(`${url}/check_face_uploaded/`, {
-    //   uid:this.props.uid
-    // },(resData) => {
-      // if (resData) {
-      //   if (resData.exist!=="true") {
-          //onFaceSignup false
-    if (true){
-      if (false) {
-          content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
-              <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace()}>
-              <Text style={{color:'#555'}}>拍摄正面照</Text>
-            </TouchableHighlight>
-            <View style={{flex:1,flexDirection:"row"}}>
-              <Image source={this.state.idFrontSource} style={[styles.uploadFace,{margin:30}]} />
-            </View>
-            <TouchableHighlight underlayColor="#48aeb4" style={[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}]} onPress={() => this._submitSignup()}>
-              <Text style={{color:'#fff'}}>提交</Text>
-            </TouchableHighlight>
-          </View>
-        } else {
-          content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
+    content = <View style={[styles.orderButtonContainer,{paddingBottom:30,marginTop:-20,}]}>
+            <Text style={{color:'#555'}}>请取下眼镜露出额头，正面面对镜头，拍摄全脸照片。</Text>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace1()}>
               <Text style={{color:'#555'}}>拍摄正面照－1</Text>
             </TouchableHighlight>
@@ -438,13 +339,6 @@ export default class extends Component{
                 <View></View>
               }
           </View>
-        }
-      } else {
-        content = <View>
-          <Text style={{color:'#555'}}></Text>
-        </View>;
-      }
-//    })
 
     return(
       <ScrollView style={styles.profileListContainer}>

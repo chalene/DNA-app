@@ -1,6 +1,7 @@
 package com.fgiapp;
 
 import com.facebook.react.ReactActivity;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.cmcewen.blurview.BlurViewPackage;

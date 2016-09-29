@@ -90,13 +90,6 @@ export default class extends Component{
     }
   }
 
-  _submitSignup() {
-    if(this._saveChangesSignup()){
-      //this.closeModal()
-      this._loginSuccess()
-    }
-  }
-
   _loginSuccess() {
     this.props.navigator.push({
               title: "DNA档案列表",
@@ -140,7 +133,15 @@ export default class extends Component{
               return true
             }
           } else {
-            AlertIOS.alert('提交失败', "识别程序出错／没有找到人脸"+"valid:"+resData.valid+" error:"+resData.error);
+            if (resData.valid === "false") {
+              AlertIOS.alert('验证失败', "上传的图片中没有人脸");
+              return false
+            } else {
+              AlertIOS.alert('验证失败', "识别程序出错");
+              //this.props.navigator.pop();
+              this._loginSuccess()
+              return true
+            }
           }
         } else {
           AlertIOS.alert('服务器无响应', '请稍后再试');
@@ -153,51 +154,6 @@ export default class extends Component{
     }
   }
 
-  _saveChangesSignup() {
-    // return true
-    // SSH post: this.refs.form.getValues()
-    // const info = this.refs.form.getValues();
-    let valid = true;
-    // for (var key in info) {
-    //   if (info[key]==="") {
-    //     valid = false;
-    //   }
-    // }
-    if (!this.state.idFront1SourceData || !this.state.idFront2SourceData || !this.state.idFront3SourceData || !this.state.idFront4SourceData) {
-      valid = false;
-    }
-
-    if (valid) {
-      //this.props.showSpiner(true);
-      Util.post(`${url}/upload_face/`,{
-        uid:this.props.uid,
-        // images are sent as jpeg base64
-        id_face_1: this.state.idFront1SourceData,
-        id_face_2: this.state.idFront2SourceData,
-        id_face_3: this.state.idFront3SourceData,
-        id_face_4: this.state.idFront4SourceData,
-      }, (resData) => {
-          //this.props.showSpiner(false);
-
-          if (resData.error !== "true") {
-            if (resData.message === "0") {
-              AlertIOS.alert('提交失败', "请检查你所填的资料");
-              return false
-            } else {
-              AlertIOS.alert('提交成功', "请等待审核");
-              //this.props.navigator.pop();
-              this._loginSuccess()
-              return true
-            }
-          } else {
-            AlertIOS.alert('服务器无响应', '请稍后再试');
-            return false
-          }
-      })
-    }else{
-      AlertIOS.alert('提交失败', '需要拍摄四张照片');
-    }
-  }
 
   _uploadFace() {
     const options = {
@@ -209,6 +165,9 @@ export default class extends Component{
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
+      quality:0.2,
+      maxWidth:322,
+      //maxHeight:,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -237,167 +196,11 @@ export default class extends Component{
     });
   }
 
-  _uploadFace1() {
-    const options = {
-      title: '选择正面照', 
-      cancelButtonTitle: '取消',
-      takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
-      cameraType: 'front', 
-      mediaType: 'photo', 
-      allowsEditing: false,
-      noData: false, 
-      storageOptions: { 
-        skipBackup: true, 
-        path: 'images'
-      }
-    };
-    ImagePickerManager.showImagePicker(options, (response) => {
-      console.log('Response = ', response);
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error) {
-        console.log('ImagePickerManager Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else {
-        const source = {uri: response.uri.replace('file://', ''), isStatic: true};
-        const sourceData = 'data:image/jpeg;base64,' + response.data;
-        this.setState({
-          idFront1Source: source,
-          idFront1SourceData: sourceData
-        });
-        console.log(this.state.idFront1Source)
-      }
-    });
-  }
-
-  _uploadFace2() {
-    const options = {
-      title: '选择正面照(偏右)', 
-      cancelButtonTitle: '取消',
-      takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
-      cameraType: 'front', 
-      mediaType: 'photo', 
-      allowsEditing: false,
-      noData: false, 
-      storageOptions: { 
-        skipBackup: true, 
-        path: 'images'
-      }
-    };
-    ImagePickerManager.showImagePicker(options, (response) => {
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error) {
-        console.log('ImagePickerManager Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else {
-        const source = {uri: response.uri.replace('file://', ''), isStatic: true};
-        const sourceData = 'data:image/jpeg;base64,' + response.data;
-        this.setState({
-          idFront2Source: source,
-          idFront2SourceData: sourceData
-        });
-        console.log(this.state.idFront2Source)
-      }
-    });
-  }
-
-  _uploadFace3() {
-    const options = {
-      title: '选择正面照(偏左)', 
-      cancelButtonTitle: '取消',
-      takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
-      cameraType: 'front', 
-      mediaType: 'photo', 
-      allowsEditing: false,
-      noData: false, 
-      storageOptions: { 
-        skipBackup: true, 
-        path: 'images'
-      }
-    };
-    ImagePickerManager.showImagePicker(options, (response) => {
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error) {
-        console.log('ImagePickerManager Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else {
-        const source = {uri: response.uri.replace('file://', ''), isStatic: true};
-        const sourceData = 'data:image/jpeg;base64,' + response.data;
-        this.setState({
-          idFront3Source: source,
-          idFront3SourceData: sourceData
-        });
-        console.log(this.state.idFront3Source)
-      }
-    });
-  }
-
-  _uploadFace4() {
-    const options = {
-      title: '选择正面照（偏下）', 
-      cancelButtonTitle: '取消',
-      takePhotoButtonTitle: '拍照', 
-      chooseFromLibraryButtonTitle: '从手机相册选取', 
-      cameraType: 'front', 
-      mediaType: 'photo', 
-      allowsEditing: false,
-      noData: false, 
-      storageOptions: { 
-        skipBackup: true, 
-        path: 'images'
-      }
-    };
-    ImagePickerManager.showImagePicker(options, (response) => {
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      }
-      else if (response.error) {
-        console.log('ImagePickerManager Error: ', response.error);
-      }
-      else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      }
-      else {
-        const source = {uri: response.uri.replace('file://', ''), isStatic: true};
-        const sourceData = 'data:image/jpeg;base64,' + response.data;
-        this.setState({
-          idFront4Source: source,
-          idFront4SourceData: sourceData
-        });
-        console.log(this.state.idFront4Source)
-      }
-    });
-  }
-  
   render() {
     let content;
-    // Util.post(`${url}/check_face_uploaded/`, {
-    //   uid:this.props.uid
-    // },(resData) => {
-      // if (resData) {
-      //   if (resData.exist!=="true") {
-          //onFaceSignup false
-    if (true){
-      if (true) {
-          content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
-              <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace()}>
+      content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
+            <Text style={{color:'#555'}}>请取下眼镜露出额头，正面面对镜头，拍摄全脸照片。</Text>
+            <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace()}>
               <Text style={{color:'#555'}}>拍摄正面照</Text>
             </TouchableHighlight>
             <View style={{lexDirection:"row"}}>
@@ -413,39 +216,6 @@ export default class extends Component{
                 <View></View>
               }
           </View>
-        } else {
-          content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
-            <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace1()}>
-              <Text style={{color:'#555'}}>拍摄正面照－1</Text>
-            </TouchableHighlight>
-            <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace2()}>
-              <Text style={{color:'#555'}}>拍摄正面照－2</Text>
-            </TouchableHighlight>
-            <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace3()}>
-              <Text style={{color:'#555'}}>拍摄正面照－3</Text>
-            </TouchableHighlight>
-            <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace4()}>
-              <Text style={{color:'#555'}}>拍摄正面照－4</Text>
-            </TouchableHighlight>
-            <View style={{flex:1,flexDirection:"row"}}>
-              <Image source={this.state.idFront1Source} style={[styles.uploadFace,{marginRight:30}]} />
-              <Image source={this.state.idFront2Source} style={styles.uploadFace} />
-            </View>
-            <View style={{flex:1,flexDirection:"row"}}>
-              <Image source={this.state.idFront3Source} style={[styles.uploadFace,{marginRight:30}]} />
-              <Image source={this.state.idFront4Source} style={styles.uploadFace} />
-            </View>
-            <TouchableHighlight underlayColor="#48aeb4" style={[styles.btn_if,{backgroundColor:'#1E868C',marginTop:20}]} onPress={() => this._submitSignup()}>
-              <Text style={{color:'#fff'}}>提交</Text>
-            </TouchableHighlight>
-          </View>;
-        }
-      } else {
-        content = <View>
-          <Text style={{color:'#555'}}></Text>
-        </View>;
-      }
-//    })
 
     return(
       <ScrollView style={styles.profileListContainer}>
