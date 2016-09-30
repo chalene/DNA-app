@@ -308,7 +308,7 @@ export default class extends Component{
   render() {
     let content;
     content = <View style={[styles.orderButtonContainer,{paddingBottom:30,marginTop:-20,}]}>
-            <Text style={{color:'#555'}}>请取下眼镜露出额头，正面面对镜头，拍摄全脸照片。</Text>
+            <Text style={{color:'#555'}}>请取下眼镜露出完整五官，正面对准镜头，拍摄全脸照片。</Text>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace1()}>
               <Text style={{color:'#555'}}>拍摄正面照－1</Text>
             </TouchableHighlight>

@@ -124,7 +124,7 @@ export default class extends Component{
         if (resData) {
           if (resData.error !== "true") {
             if (resData.valid === "false") {
-              AlertIOS.alert('验证失败', "对不起 您太帅了系统识别不出来");
+              AlertIOS.alert('验证失败', "抱歉，您确定是本人吗？");
               return false
             } else {
               AlertIOS.alert('验证成功', "人脸识别通过 欢迎回来");
@@ -134,10 +134,10 @@ export default class extends Component{
             }
           } else {
             if (resData.valid === "false") {
-              AlertIOS.alert('验证失败', "上传的图片中没有人脸");
+              AlertIOS.alert('验证失败', "抱歉，未获取完整面部特征，请重试");
               return false
             } else {
-              AlertIOS.alert('验证失败', "识别程序出错");
+              AlertIOS.alert('验证失败', "系统故障，请稍候再试");
               //this.props.navigator.pop();
               this._loginSuccess()
               return true
@@ -199,7 +199,7 @@ export default class extends Component{
   render() {
     let content;
       content = <View style={[styles.orderButtonContainer,{paddingBottom:30}]}>
-            <Text style={{color:'#555'}}>请取下眼镜露出额头，正面面对镜头，拍摄全脸照片。</Text>
+            <Text style={{color:'#555'}}>请取下眼镜露出完整五官，正面对准镜头，拍摄全脸照片。</Text>
             <TouchableHighlight underlayColor="#eee" style={[styles.btn_if,{backgroundColor:'#ddd'}]} onPress={() => this._uploadFace()}>
               <Text style={{color:'#555'}}>拍摄正面照</Text>
             </TouchableHighlight>
