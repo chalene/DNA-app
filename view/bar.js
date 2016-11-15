@@ -34,7 +34,7 @@ class Bar extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: this.props.isFirstTime==="1"? '我的帐户':'华大商城',
+      selectedTab: this.props.isFirstTime==="1"? '我的帐户':'查看DNA档案',
       isFirstTime: this.props.isFirstTime==="1"? true: false,
     };
   }

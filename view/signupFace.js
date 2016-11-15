@@ -39,7 +39,9 @@ import { url } from '../config';
  * - password again
  */
 
-export default class extends Component{
+//export default class extends Component{
+ class FaceInitial extends Component{
+
   // static defaultProps = {
   //     isValid: false,
   //     onFaceSignup: false,
@@ -348,6 +350,90 @@ export default class extends Component{
   }
 }
 
+//class loginAgain extends Component{
+export default class extends Component{
+  static defaultProps = {
+      isLogin: false,
+  };
+
+  static propTypes = {
+    uid: React.PropTypes.string.isRequired,
+    isLogin: React.PropTypes.bool.isRequired,
+    //callbackLogin: React.PropTypes.func.isRequired,
+  };
+
+  constructor(props) {
+    super(props);
+    //this.loginSuccess = this._loginSuccess.bind(this);
+
+    this.state = {
+      isLogin: this.props.isLogin,
+    };
+  }
+
+  componentDidMount() {
+    //StatusBarIOS.setStyle(1);
+  }
+
+  _login(){
+    // this.loginSuccess();
+    Util.post(`${url}/check_password/`, {
+        password: this.refs.form.getValues().password,
+        uid:this.props.uid
+      }, (resData) => {
+        if (resData) {
+          if (resData.loginState == "1" ){//"false") {
+            //AlertIOS.alert('登陆成功', '成功');   
+            this.props.navigator.push({
+              title: "人脸识别注册",
+              component:FaceInitial,
+              navigationBarHidden: false,
+              passProps:{ uid: this.props.uid},
+            });  
+          } else {
+            //AsyncStorage.setItem('loginState',"1").done();
+            //AsyncStorage.setItem('uid',resData.uid).done();
+            AlertIOS.alert('登陆失败', '密码验证不通过'); 
+            //this.loginSuccess(resData.uid);
+          }
+        } else {
+          AlertIOS.alert('登陆失败', '服务器无响应');
+        }
+    })
+  }
+
+  // _loginSuccess(uid) {
+  //   const newState = {
+  //     uid: uid,
+  //   }
+  //   //this.setState(newState);
+  //   //this.props.callbackLogin(newState);
+  //   this.props.navigator.push({
+  //     title: "DNA档案列表",
+  //     component:CheckProfile,
+  //     navigationBarHidden: false,
+  //     passProps:{ uid: this.props.uid},
+  //   })
+  // }
+
+  render() {
+    return (
+      <ScrollView style={styles.profileListContainer}>
+        <Form ref="form">
+          <View style={styles.inputRow}>
+            <TextInput type="TextInput" name="password" ref='SecondInput' placeholderTextColor="#777" style={styles.input} placeholder="密码" password={true}/>
+            <Icon name="lock" style={styles.icon} size={20} />
+          </View>
+        </Form>
+        <View style={styles.inputRow}>
+          <TouchableHighlight underlayColor="#48aeb4" style={styles.btn_pm} onPress={() => this._login()}>
+            <Text style={{color:'#fff'}}>确认</Text>
+          </TouchableHighlight>
+        </View>
+      </ScrollView>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   profileListContainer:{

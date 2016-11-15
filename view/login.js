@@ -19,6 +19,27 @@ import Form from 'react-native-form';
 
 // Configuration file
 import { url } from '../config';
+import LocalizedStrings from 'react-native-localization';
+
+let strings = new LocalizedStrings ({
+  en: {
+    loginFail:"Login Fail",
+    loginPass:"Login Success",
+    passwordMismatched:"Username and password mismatched",
+    invalidAccount:"Username is invalid",
+    serverErr:"Server Error",
+  },
+  chs: {
+    loginFail:"登录失败",
+    loginPass:"登录成功",
+    passwordMismatched:"用户名或密码不匹配",
+    invalidAccount:"用户名不存在",
+    serverErr:"服务器无响应",
+
+  } 
+
+  
+});
 
 class Login extends Component{
   static defaultProps = {
@@ -69,10 +90,13 @@ class Login extends Component{
           if (resData.error !== "false") {
             switch(resData.loginState){   
               case "0":
-                AlertIOS.alert('登陆失败', '用户名或密码不匹配');     
+                AlertIOS.alert(strings.loginFail, strings.passwordMismatched);     
                 break;                                                         
               case "2": 
                 AlertIOS.alert('登陆失败', '用户名不存在');
+                break;
+              default: 
+                AlertIOS.alert('登陆失败', '请联系管理员');
               //   break;
               // case "3":
               //   AlertIOS.alert('登陆失败', '用户名或密码不匹配');
@@ -115,24 +139,10 @@ class Login extends Component{
             <TextInput type="TextInput" name="username" returnKeyType = {"next"}  placeholderTextColor="#777" style={styles.input} placeholder="用户名"/>
             <Icon name="user" style={styles.icon} size={20} />
           </View>
-          <View style={styles.inputRow}>
-            <TextInput type="TextInput" name="password" ref='SecondInput' placeholderTextColor="#777" style={styles.input} placeholder="密码" password={true}/>
-            <Icon name="lock" style={styles.icon} size={20} />
-          </View>
         </Form>
         <View style={styles.inputRow}>
           <TouchableHighlight underlayColor="#48aeb4" style={styles.btn_pm} onPress={() => this._login()}>
             <Text style={{color:'#fff'}}>登录</Text>
-          </TouchableHighlight>
-        </View>
-        <View style={styles.inputRow}>
-          <View style={styles.btn_dec}></View>
-          <Text style={styles.btn_or}>或</Text>
-          <View style={styles.btn_dec}></View>
-        </View>
-        <View style={styles.inputRow}>
-          <TouchableHighlight underlayColor="#fff" style={styles.btn} onPress={() => this._launchSignup()}>
-            <Text style={{color:'#777'}}>注册</Text>
           </TouchableHighlight>
         </View>
       </View>
