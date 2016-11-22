@@ -160,8 +160,8 @@ import { url } from '../config';
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
-      maxWidth:322,
+      quality:1,
+      maxWidth:480,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -200,8 +200,8 @@ import { url } from '../config';
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
-      maxWidth:322,
+      quality:1,
+      maxWidth:480,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -239,8 +239,8 @@ import { url } from '../config';
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
-      maxWidth:322,
+      quality:1,
+      maxWidth:480,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'
@@ -278,8 +278,8 @@ import { url } from '../config';
       mediaType: 'photo', 
       allowsEditing: false,
       noData: false, 
-      quality:0.2,
-      maxWidth:322,
+      quality:1,
+      maxWidth:480,
       storageOptions: { 
         skipBackup: true, 
         path: 'images'

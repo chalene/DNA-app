@@ -62,14 +62,14 @@ export default class extends Component{
       isValid: this.props.isValid,
       onFaceSignup: this.props.onFaceSignup,
       showSpiner:false,
-      idFront1Source: {uri:'idfront1'},
-      idFront1SourceData: "",
-      idFront2Source: {uri:'idfront2'},
-      idFront2SourceData: "",
-      idFront3Source: {uri:'idfront3'},
-      idFront3SourceData: "",
-      idFront4Source: {uri:'idfront4'},
-      idFront4SourceData: "",
+      idFrontSource: {uri:'idfront'},
+      idFrontSourceData: "",
+      // idFront2Source: {uri:'idfront2'},
+      // idFront2SourceData: "",
+      // idFront3Source: {uri:'idfront3'},
+      // idFront3SourceData: "",
+      // idFront4Source: {uri:'idfront4'},
+      // idFront4SourceData: "",
     };
   }
 
