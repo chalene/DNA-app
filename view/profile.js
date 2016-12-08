@@ -260,6 +260,7 @@ class verifyUser extends Component{
     const {data} = this.props;
     return(
       <ScrollView showsVerticalScrollIndicator={false} style={styles.userContainer}>
+        <Image source={require('./img/logo3.png')} style={styles.bgImageWrapper}/>
         <View style={{alignItems:"center",width:Util.size.width}}>
           <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this.onFacePress()}>
             <Text style={{color:'#fff',fontSize: 22,}}>人脸识别</Text>
@@ -303,8 +304,15 @@ export default class extends Component{
 }
 
 const styles = StyleSheet.create({
+  bgImageWrapper: {
+    position: 'absolute',
+    top: 0, bottom: 0, left: 0, right: 0,
+    height: Util.size.height,
+    width: Util.size.width
+  },
+
   big_button:{
-    marginTop:0.2*Util.size.width,
+    marginTop:0.1*Util.size.width,
     marginBottom:13,
     width:0.5*Util.size.width,
     height:0.4*Util.size.width,//40,
