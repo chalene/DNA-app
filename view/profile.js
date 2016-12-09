@@ -260,17 +260,20 @@ class verifyUser extends Component{
     const {data} = this.props;
     return(
       <ScrollView showsVerticalScrollIndicator={false} style={styles.userContainer}>
-        <Image source={require('./img/logo3.png')} style={styles.bgImageWrapper}/>
-        <View style={{alignItems:"center",width:Util.size.width}}>
-          <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this.onFacePress()}>
-            <Text style={{color:'#fff',fontSize: 22,}}>人脸识别</Text>
-          </TouchableHighlight>
+        <Image source={require('./img/aerial.jpg')} style={styles.bgImageWrapper}/>
+        <View style={{flex: 1, flexDirection: 'row',marginTop:80}}>
+          <View style={{marginLeft:0.09*Util.size.width,width:200}}>
+            <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this.onFacePress()}>
+              <Text style={{color:'#fff',fontSize: 22,}}>人脸识别</Text>
+            </TouchableHighlight>
+          </View>
+          <View style={{width:200}}>
+            <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this._onPasswordPress()}>
+              <Text style={{color:'#fff',fontSize: 22,}}>密码查看</Text>
+            </TouchableHighlight>
+          </View>
         </View>
-        <View style={{alignItems:"center",width:Util.size.width}}>
-          <TouchableHighlight underlayColor="#FFF5EE" style={styles.big_button} onPress={() => this._onPasswordPress()}>
-            <Text style={{color:'#fff',fontSize: 22,}}>密码查看</Text>
-          </TouchableHighlight>
-        </View>
+
       </ScrollView>
     );
   }
@@ -313,9 +316,9 @@ const styles = StyleSheet.create({
 
   big_button:{
     marginTop:0.1*Util.size.width,
-    marginBottom:13,
-    width:0.5*Util.size.width,
-    height:0.4*Util.size.width,//40,
+    //marginBottom:13,
+    width:0.3*Util.size.width,
+    height:0.18*Util.size.width,//40,
     borderRadius:2,
     backgroundColor:'#1E868C',
     justifyContent:'center',
